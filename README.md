@@ -1,5 +1,7 @@
 # Lenguajes de Marcado y Tecnologías Web. Curso 2014-2015
 
+[![Join the chat at https://gitter.im/vitojph/2015lmweb](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vitojph/2015lmweb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Grado en Lingüística y Lenguas Aplicadas, Fac. de Filología, UCM
 
 Curso 2014-2015

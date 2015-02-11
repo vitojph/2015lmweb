@@ -6,9 +6,19 @@
 
 Curso 2014-2015
 
-### Presentación
+## Presentación
 
 Este repositorio contiene los materiales de la asignatura.
+
+
+## Programa
+
+1. Tipos de información
+2. Tipos de documentos de texto
+3. Lenguajes de marcas ligeros
+4. LaTeX
+5. HTML
+6. XML
 
 
 

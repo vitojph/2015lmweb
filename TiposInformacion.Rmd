@@ -1,20 +1,20 @@
-# Tipos de Información
-## Lenguajes de Marcado y Tecnologías Web
+---
+title: "Tipos de Información"
+author: "Víctor Peinado"
+date: "16/02/2015"
+output: ioslides_presentation
+---
 
-Grado en Lingüística y Lenguas Aplicadas
-
-
-17/02/2015. Víctor Peinado <v.peinado@filol.ucm.es>
-
-
-
-
-Tipos de Información
-====================
+## Tipos de Información
 
 La información puede presentarse de tres formas distintas:
 
-**texto escrito**
+- texto escrito
+- habla
+- imágenes y vídeo
+
+
+## Texto escrito
 
 - Es el medio básico para la comunicación formal entre seres humanos.
 - Puede tomar la forma de notas, cartas, mensajes escritos, libros, periódicos,
@@ -22,20 +22,17 @@ La información puede presentarse de tres formas distintas:
 - Para manejarse, es indispensable saber leer y escribir.
 
 
-**habla**
+## Habla
 
 - Es el medio informal de comunicación entre seres humanos.
 - Es accesible para gente que no sabe leer ni escribir.
 
-
-
-Tipos de Información (cont.)
-============================
-
-**imágenes y vídeo**
+## Imágenes y vídeo
 
 - Suelen utilizarse para complementar información que se proporciona en texto: gráficos, diagrama.
 - Puede utilizar sin texto, en la forma de ilustraciones, fotografía, pinturas, películas.
+
+## Tipos de información
 
 Representar, manejar y procesar estos tres tipos de información presenta
 distintos problemas y retos.
@@ -43,11 +40,7 @@ distintos problemas y retos.
 Veamos cómo almacenamos estos tipos de información en formto digital.
 
 
-
-
-Documentos de texto
-===================
-
+## Documentos de texto
 
 **[texto plano](http://en.wikipedia.org/wiki/Plain_text)**
 
@@ -55,19 +48,20 @@ Documentos de texto
 - contenido textual intercambiable, sin añadidos.
 - no contiene información de apariencia o estilo.
 - puede contener información de estructura: textos con marcas o meta-datos.
-- puede visualizar y editarse con cualquier editor de texto: Notepad, UltraEdit (Windows), emacs, vim, gedit (Linux), SimpleText, TextEdit (MacOS).  
+- puede visualizar y editarse con cualquier editor de texto: Notepad, Notepad++, SublimeText, UltraEdit, emacs, vim, gedit , SimpleText, TextEdit, etc.  
+
+
+## Documentos de texto
 
 **[texto con formato](http://en.wikipedia.org/wiki/Formatted_text)**
 
 - secuencia de caracteres + información de estilo (tipos de letra, tamaños, colores, estructura, hiperenlaces)
 - no necesariamente intercambiable, sino transformable.
-- visualizable y editable con programas específicos [WYSIWYG](http://en.wikipedia.org/wiki/WYSIWYG): MS-Word, OpenOffice Writer, MacWrite, WordStar, WordPerfect.
+- visualizable y editable con programas específicos [WYSIWYG](http://en.wikipedia.org/wiki/WYSIWYG): MS-Word, LibreOffice Writer, Google Drive, MacWrite, WordStar, WordPerfect.
 
 
+## Documentos de texto: formatos
 
-
-Documentos de texto: formatos
-===
 
 De todos los [formatos de documentos de texto](http://en.wikipedia.org/wiki/List_of_file_formats#Document), los más habituales son:
 
@@ -75,7 +69,10 @@ De todos los [formatos de documentos de texto](http://en.wikipedia.org/wiki/List
 
 - texto plano: \*.txt, \*.text
 - lenguajes de marcado: \*.html, \*.xml, \*.md, \*.tex
-- código de lenguajes de programación: \*.java, \*.py, \*.pl, \*.c, \*.php
+- código de lenguajes de programación: \*.java, \*.py, \*.pl, \*.c, \*.php, \*.go
+
+
+## Documentos de texto: formatos
 
 **texto con formato**
 
@@ -85,10 +82,7 @@ De todos los [formatos de documentos de texto](http://en.wikipedia.org/wiki/List
 - formato PDF: \*.pdf
 
 
-
-
-Documentos de audio: formatos
-===
+## Documentos de audio: formatos
 
 De todos los [formatos de documentos de audio](http://en.wikipedia.org/wiki/List_of_file_formats#Sound_and_music), los más habituales son:
 
@@ -109,8 +103,8 @@ De todos los [formatos de documentos de audio](http://en.wikipedia.org/wiki/List
 
 
 
-Documentos de imagen: formatos
-===
+## Documentos de imagen: formatos
+
 
 De todos los [formatos de fichero de imagen](http://en.wikipedia.org/wiki/Image_file_formats), los más habituales son:
 
@@ -131,11 +125,7 @@ De todos los [formatos de fichero de imagen](http://en.wikipedia.org/wiki/Image_
 
 
 
-
-
-Referencias
-===========
-
+## Referencias
 
 - Capítulo de Salton, G. "The Information Environment".
 - Wikipedia: [Formatos de ficheros](http://en.wikipedia.org/wiki/List_of_file_formats#Document).

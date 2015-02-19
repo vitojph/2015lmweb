@@ -1,8 +1,8 @@
 ---
 title: "Tipos de Información"
 author: "Víctor Peinado"
-date: "17/02/2015"
-output: ioslides_presentation
+date: "19 de febrero de 2015"
+output: rmarkdown::tufte_handout
 ---
 
 ## Tipos de Información

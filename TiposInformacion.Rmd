@@ -46,31 +46,27 @@ Distinguimos dos tipos de documentos textuales: texto plano y texto con formato.
 - contenido textual intercambiable, sin añadidos.
 - no contiene información de apariencia o estilo.
 - puede contener información de estructura: textos con **marcas** o meta-datos.
-- puede visualizar y editarse con cualquier editor de texto\marginnote{Hay centenares de editores de textos: en negrita algunos de los que utilizaremos en clase: Notepad, \textbf{Notepad++}, \textbf{SublimeText}, UltraEdit, emacs, vim, nano, gedit, Mate, SimpleText, TextEdit, etc.}  
+- visualizable y editable con cualquier **editor de texto**\marginnote{Hay centenares de editores de textos, algunos más sencillos, otros más potentes, algunos orientados a escribir código de programación. En negrita, algunos de los que utilizaremos más adelante en clase: Notepad, \textbf{Notepad++}, \textbf{SublimeText}, UltraEdit, Emacs, Vim, nano, Gedit, Textmate, SimpleText, TextEdit, etc.}  
 
 
 ## Texto con formato
 
 - secuencia de caracteres + información de estilo (tipos de letra, tamaños, colores, estructura, hiperenlaces)
 - no necesariamente intercambiable, sino transformable.
-- visualizable y editable con programas específicos [WYSIWYG](http://en.wikipedia.org/wiki/WYSIWYG): MS-Word, LibreOffice Writer, Google Drive, MacWrite, WordStar, WordPerfect.
+- visualizable y editable con **procesador de texto**, habitualmente de tipo [WYSIWYG](http://en.wikipedia.org/wiki/WYSIWYG).\marginnote{Conoces y usas habitualmente algún procesador de texto incluído alguna  \textit{suite} ofimática: MS-Word, LibreOffice/OpenOffice, Google Drive, KOffice, Abiword, MacWrite, WordStar, WordPerfect, etc.}
 
+## Formatos de documentos de texto
 
-## Documentos de texto: formatos
+De todos los formatos de documentos de texto,[^texto] los más habituales son:
 
-
-De todos los [formatos de documentos de texto](http://en.wikipedia.org/wiki/List_of_file_formats#Document), los más habituales son:
-
-**texto plano**
+Entre los formatos de **texto** más habituales, tenemos:
 
 - texto plano: \*.txt, \*.text
 - lenguajes de marcado: \*.html, \*.xml, \*.md, \*.tex
 - código de lenguajes de programación: \*.java, \*.py, \*.pl, \*.c, \*.php, \*.go
 
 
-## Documentos de texto: formatos
-
-**texto con formato**
+Tenemos también formatos de **ficheros binarios**.
 
 - formato MS-Word: \*.doc, \*docx
 - formato de intercambio de MS: \*.rtf
@@ -78,46 +74,39 @@ De todos los [formatos de documentos de texto](http://en.wikipedia.org/wiki/List
 - formato PDF: \*.pdf
 
 
-## Documentos de audio: formatos
+## Formatos de ficheros de audio
 
-De todos los [formatos de documentos de audio](http://en.wikipedia.org/wiki/List_of_file_formats#Sound_and_music), los más habituales son:
+De todos los formatos de documentos de audio,[^audio] los más habituales son:
 
-**audio sin pérdida**
+1. **audio sin pérdida**
 
-- audio no comprimido
-    - \*.wav, \*.aiff
+    - audio no comprimido: \*.wav, \*.aiff
 
-- audio comprimido
+    - audio comprimido: \*.wma, \*.flac, \*.m4a
 
-    - \*.wma, \*.flac, \*.m4a
+2. **audio con pérdida** (y comprimido)
 
-
-**audio con pérdida** (y comprimido)
-
-  - \*.mp3, \*.aac, \*.ra, \*.speex
+    - \*.mp3, \*.aac, \*.ra, \*.speex
 
 
+## Formatos de ficheros de imagen
+
+De todos los formatos de fichero de imagen,[^imagenes] los más habituales son:
 
 
-## Documentos de imagen: formatos
+1. **comprimido sin pérdida**
+
+    - \*.raw, \*.tiff
 
 
-De todos los [formatos de fichero de imagen](http://en.wikipedia.org/wiki/Image_file_formats), los más habituales son:
+2. **comprimido con pérdida**
+
+    - \*.jpg, \*.jpeg, \*.png, \*.gif
 
 
-**comprimido sin pérdida**
+3. **no comprimido**
 
-- \*.raw, \*.tiff
-
-
-**comprimido con pérdida**
-
-- \*.jpg, \*.jpeg, \*.png, \*.gif
-
-
-**no comprimido**
-
-- \*.bmp
+    - \*.bmp
 
 
 
@@ -129,4 +118,10 @@ De todos los [formatos de fichero de imagen](http://en.wikipedia.org/wiki/Image_
 [^plano]: Wikipedia: Texto plano http://en.wikipedia.org/wiki/Plain_text
 
 [^formato]: Wikipedia: Texto con formato http://en.wikipedia.org/wiki/Formatted_text
+
+[^texto]: Wikipedia: Ficheros de texto http://en.wikipedia.org/wiki/List_of_file_formats#Document
+
+[^audio]: Wikipedia: Ficheros de audio http://en.wikipedia.org/wiki/List_of_file_formats#Sound_and_music
+
+[^imagenes]: Wikipedia: Ficheros de imágenes http://en.wikipedia.org/wiki/Image_file_formats
 

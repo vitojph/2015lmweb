@@ -1,0 +1,440 @@
+---
+title: "Lenguajes de marcas ligeros  | LMTW"
+author: "Víctor Peinado"
+date: "24 de febrero de 2015"
+output: rmarkdown::tufte_handout
+---
+
+# Referencias
+
+- 
+
+
+# Lenguajes de Marcas Ligeros
+
+Pequeña intro
+
+
+# Wiki Markup
+
+Wiki Markup[^wikiml] es la sintaxis y el conjunto de palabras clave que usa el proyecto MediaWiki[^mediawiki] para publicar documentos. MediaWiki es el software sobre el que se construye  Wikipedia y otros proyectos paralelos como Wiktionary, Wikitravel, etc.
+
+Se trata de un *lenguaje de marcas ligero* que es fácilmente transformable en HTML. La principal ventaja es que permite teclear y formatear rápidamente páginas wiki, visualizables desde cualquier ordenador.
+
+Ten en cuenta que los navegadores no saben interpretar directamente Wiki Markup: para ello es necesario *convertirlo* previamente a HTML. De esta conversión se encarga el gestor de wikis Mediawiki.
+
+En los últimos tiempos, mucha gente ha mostrado su descontento con el progresivo aumento de complejidad de Wiki Marku. Por las necesidades de Wikipedia, el lenguaje ha ido adquiriendo nuevas funcionalidades y se ha hecho demasiado complejo. Muchos piensan que ya no sirve como ejemplo de *simplificación* de HTML.
+
+
+## Funcionalidades de Wiki Markup
+
+La sintaxis de Wiki Markup[^wikisyntax] permite fácilmente:
+
+- Estructurar el texto en epígrafes, párrafos, tablas, bloques de texto.
+- Modificar la apariencia del texto: cursivas, negritas, etc.
+- Insertar imágenes.
+- Insertar hipervínculos.
+- Organizar listas de elementos de manera ordenada.
+
+Además de todo lo anterior, en Wiki Markup podemos:
+
+- Manejar [refencias, citas, fuentes](http://en.wikipedia.org/wiki/Help:Wiki_markup#References_and_citing_sources) de artículos, etc.
+- Gestionar palabras clave que permiten la insercción de [variables](http://en.wikipedia.org/wiki/Help:Wiki_markup#Variables) en el texto.
+- Crear automáticamente [índices de contenidos](http://en.wikipedia.org/wiki/Category:Wikipedia_table_of_contents_templates).
+- Gestionar los interenlaces entre las distintas traducciones, redirecciones, las distintas versiones de una misma página de la wiki, etc.
+- Añadir información sobre [pronunciación](http://en.wikipedia.org/wiki/Help:Wiki_markup#Pronunciation_aids).
+- ...
+
+## Epígrafes y párrafos
+
+- Los títulos se encierran entre pares de símbolos de igual (`=`), tantos como escalones queramos bajar en la jerarquía de títulos.
+
+    `= Título de primer nivel = `
+    
+    `== Título de segundo nivel ==`
+
+    `===== Título de quinto nivel =====`
+
+- Los párrafos no se marcan explícitamente. Cualquier conjunto de líneas de
+  texto seguidas será considerado un párrafo. Para separa párrafos, es
+  necesario introducir doble retorno de carro (doble *intro*).
+
+
+## Apariencia del texto
+
+- Cursivas entre dobles apóstrofos `''Cursiva''`
+- Negritas entre tripes apóstrofos: `''Negrita''`
+- Negrita y cursiva entre encerrando entre cinco pares de apóstrofos: `'''''Negrita y cursiva'''''`
+- Pequeños porciones de texto sin formato entre etiquetas 
+  
+    `<code>from nltk import corpus</code>`
+
+
+
+## Listas no ordenadas
+
+- El inicio y final de las listas no se marca explícitamente. 
+- Los elementos de las listas se marcan con asterisco (`*`).
+- Las listas se pueden anidar.
+
+    `* Item 1`
+
+    `* Item 2`
+
+    `* Item 3`
+
+    `** Sub-item 3.1`
+
+    `*** Sub-item 3.1.1`
+
+    `* Sub-item 4`
+
+
+## Listas ordenadas
+
+- Como en el caso anterior, el inicio y final de las listas no se marca explícitamente. 
+- Los elementos de las listas se marcan con una almohadilla (`#`).
+- Las listas se pueden anidar.
+
+    `# Item 1`
+
+    `# Item 2`
+
+    `# Item 3`
+
+    `## Sub-item 3.1`
+
+    `### Sub-item 3.1.1`
+
+    `# Sub-item 4`
+
+
+## Hiperenlaces
+
+En las wikis, existen varios tipos de [enlaces](http://en.wikipedia.org/wiki/Help:Wiki_markup#Links_and_URLs):
+
+- **Enlaces internos**, que apuntan a otras páginas de la propia wiki.
+
+  `Para volver al inicio, visita la página [[Index]]`.
+
+  `Para volver al inicio, visita la [[Index|página inicial]]`
+
+- **Enlaces externos**, que apuntan a cualquier URL fuera de la wiki.
+
+    `Visita la página [http://www.ucm.es].`
+
+    `Visita la página de la [http://www.ucm.es Universidad Complutense de
+    Madrid].`
+
+## Imágenes
+
+- Como mecanismo de control, no se pueden incluir que no hayan sido previamente
+  subidas al ser Mediawiki.
+
+- Una vez que las imágenes se han cargado, la sintaxis para incluirlas en una
+  págia es:
+
+    `[[File:wiki.png]]`
+
+- Para incluir una imagen con un texto alternativo:
+
+    `[[File:wiki.png|alt=Puzzle globe logo]]`
+
+- Para insertar imágenes que funcionen como un enlace, la sintaxis es:
+
+    `[[File:wiki.png|link=Wikipedia]]`
+
+# Markdown
+
+- [Mardown](http://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcas ligero que recientement ha adquirido mucha popularidad como lenguaje de marcas en blogs ([Wordpress](http://www.wordpress.org) lo utiliza por defecto) y como lenguaje para la documentación de proyectos de software libre.
+- Es un lenguaje de marcas sencillo que es fácilmente traducible a distintas versiones de HTML.
+- La principal ventaja es que permite teclear y formatear rápidamente el texto.
+- Los navegadores no interpretan directamente Markdown: es necesario *traducirlo* previamente a HTML.
+
+## Funcionalidades de Markdown
+
+La [sintaxis de Markdown](http://daringfireball.net/projects/markdown/syntax) permite fácilmente:
+
+- Estructurar el texto en epígrafes, párrafos, bloques de texto.
+- Modificar ligeramente la apariencia del texto: cursivas, negritas, etc.
+- Insertar imágenes.
+- Insertar hipervínculos.
+- Organizar listas de elementos de manera ordenada.
+
+## Epígrafes y párrafos
+
+- Los títulos se marcan con almohadillas. Una almohadilla para títulos de
+  primer nivel, dos para titulos de segundo nivel, etc.
+
+    `# Título de primer nivel`
+    
+    `## Título de segundo nivel`
+
+    `##### Título de quinto nivel`
+
+- Los párrafos no se marcan explícitamente. Cualquier conjunto de líneas de
+  texto seguidas será considerado un párrafo. Para separa párrafos, es
+  necesario introducir doble retorno de carro (doble *intro*).
+
+## Apariencia del texto
+
+- Énfasis (cursiva): `*Cursiva*` o `_Cursiva_`
+- Doble énfasis (negrita): `**Negrita**` o `__Negrita__`
+- Textos sin formato entre acentos graves: `` `texto sin formato` ``
+- Porciones de código en bloques de texto con sangría.
+
+
+## Listas no ordenadas
+
+- Las listas no ordenadas se especifican añadiendo al principio de cada elemento guiones (`-`), asteriscos (`*`) o símbolos de suma (`+`). 
+
+- No se marcan el inicio y el final de la lista.
+
+    `Lista de la compra:`
+
+    `- Tomates.`
+
+    `- Pepinos.`
+
+    `- Patatas.`
+
+
+## Listas ordenadas
+
+- Las listas ordenadas se especifican añadiendo al principio de cada elemento cualquier número seguido de un punto (`.`). Cualquier número, no necesariamente ordenados. 
+
+- El resultado visual va a ser una lista ordenada numéricamente.
+
+- No se marcan el inicio y el final de la lista.
+
+    `Pasos a seguir para levantarse por las mañanas:`
+
+    `1. Abrir un ojo.`
+
+    `2. Abrir el otro.`
+
+    `8. Saltar de la cama.`
+
+
+## Imágenes
+
+- La sintaxis general para insertar imágenes es:
+
+    `![Texto alternativo](ruta_a_la_imagen)`
+
+    `![Texto alternativo](ruta_a_la_imagen "Título Opcional")`
+
+
+## Hiperenlaces
+
+- En general, los enlaces se especifican encerrando el texto del enlace entre corchetes e incluyendo el destino al que apunta el enlace entre paréntesis.
+
+    `Este texto contiene un [enlace a la web de la UCM](http://www.ucm.es)`
+
+- Podemos incluir, de manera opcional, un título al enlace. 
+  
+    `Este texto contiene un [enlace a la web de la UCM](http://www.ucm.es "Universidad Complutense de Madrid")`
+  
+- También es posible crear enlaces automáticos sobre URLs o direcciones de
+  correo-e, encerrándolos entre paréntesis angulares (`<>`).
+
+    `Para más información, visita <http://www.ucm.es> o escribe un mensaje a <info@ucm.es>.`
+
+
+## Bloques de texto
+
+- Los bloques de texto se marcan con el símbolo `>`, de manera similar a la de
+  muchos programas de correo.
+
+    `A continuación voy a escribir citar un texto:`
+
+    `> Esto es una cita anónima de dos líneas.`
+
+    `> Esta es la segunda línea`
+
+- Los bloques de texto citados pueden anidarse. 
+
+    `> Esto es una cita de primer nivel.`
+
+    `> > Esta es la segunda línea, que aparece anidada.`
+
+    `> Y volvemos a subir al primer nivel.`
+
+## Bloques de código
+
+- Para escribir bloques de código de programación o, en general, texto escrito
+  en fuente de ancho fijo, encerramos el texto entre acentos graves (`` ` ` ``).
+
+    `En UNIX, el comando para listar el contenido de un directorio`
+
+    ``es `ls`. En Windows el comando equivalente es `dir`.``
+
+
+## Caracteres escapados
+
+- Hemos visto que Markdown usa algunos símbolos como metacaracteres, con
+  significados concretos.
+
+- Si necesitamos insertar cualquiera de estos símbolos es preciso *escaparlos*, es decir, incluirlos precedidos de una barra invertida `\`.
+
+    ``\\ \` \* \_ \{ \} \[ \] \( \) \# \+ \- \. \! ``
+
+
+# BBCode
+
+- [BBCode](http://es.wikipedia.org/wiki/BBCode) (*Bulletin Board Code*) es un lenguaje de marcas ligero utilizadoi habitualmente en foros de discusión y listas de correo para dar formato al texto.
+- Como veremos más adelante, se trata de una simplifación de HTML.
+  - Su principal ventaja es que es más sencillo y cómodo de teclear.
+- Al contrario que otros lenguajes similares, no está regulado por ningún organismo, aunque los [conceptos básicos de su sintaxis](http://www.bbcode.org/reference.php) se mantienen estables.
+- Los navegadores no interpretan directamente BBCode: en necesario que el foro
+  (o el gestor de la lista de correo) *traduzca* las etiquetas BBCode a HTML.
+
+## Funcionalidades de BBCode
+
+Las etiquetas de BBCode permiten:
+
+- Modificar la apariencia del texto.
+- Insertar imágenes.
+- Insertar hipervínculos.
+- Organizar listas de elementos de manera ordenada.
+- Marcar distintos bloques de texto de manera diferenciada.
+
+## Estructura y sintaxis
+
+- Los **elementos** son la estructura básica del lenguaje.
+- Cada elemento tiene dos propiedades esenciales: **contenido** y **atributos**.
+- Los **elementos** en BBCode poseen una etiqueta de inicio y una etiqueta de cierre, y el contenido queda enmarcado entre ambas etiquetas. 
+    - Los nombres de etiqueta se delimitan entre corchetes `[etiqueta]`. 
+    - La etiqueta de inicio se especifica entre corchetes, sin más:
+      `[etiqueta]`.
+    - La etiquta de cierre se especifica añadiendo una barra antes del nombre
+      de elemento: `[/etiqueta]`.
+- Algunas etiquetas pueden incluir modificadores que reciben el nombre de
+  **atributos**.
+    - El valor del atributo se asigna en la propia etiqueta con el símbolo `=`.  
+- La sintaxis general es entonces:
+
+    `[nombre_etiqueta="atributo"] Contenido [/nombre_etiqueta]`
+
+## Apariencia del texto
+
+- Negritas: `[b]Negrita[/b]`
+- Cursiva: `[i]Cursiva[/i]`
+- Subrayado: `[u]Subrayado[/u]`
+- Tachado: `[s]Tachado[/s]`
+- Tamaño de fuente: `[size=18]Tamaño 18[/size]`
+- Tipo de fuente: `[font="Arial"]Tipo de letra Arial[/font]`
+- Color de fuente: `[color="green"]Letra en color verde[/color]`
+
+
+## Listas no ordenadas
+
+- Listas desordenadas, que muestra una serie de elementos de manera secuencial
+  
+    `[list]`
+
+    `[*]Primer ítem`
+
+    `[*]Segundo ítem`
+
+    `[*]Tercer ítem`
+
+    `[/list]`
+
+
+## Listas ordenadas numeradas
+
+- Listas ordenadas numéricamente: 
+
+    `[list=1]`
+ 
+    `[*]Ir a la tienda`
+
+    `[*]Comprar una nueva PC`
+    
+    `[*]Insultar a la PC cuando se cuelgue`
+    
+    `[/list]`
+
+## Listas ordenadas alfabéticas
+
+- Listas ordenadas alfabéticamente:
+
+    `[list=a]`
+    
+    `[*]Ir a la tienda`
+    
+    `[*]Comprar una nueva PC`
+    
+    `[*]Insultar a la PC cuando se cuelgue`
+    
+    `[/list]`
+
+
+## Inserción de Imágenes
+
+- La sintaxis general para insertar imágenes es:
+
+    `[img]ruta_de_la_imagen[/img]`
+
+- Es posible configurar las dimensiones de la imagen utilizando los atributos
+  `width` y `heigth`, como en:
+
+    `[img width=264 height=240]ruta_de_la_imagen[/img]`
+
+
+## Hiperenlaces
+
+Existen dos variantes de hiperenlaces que podemos insertar en BBCode:
+
+- Hipervínculo directamente sobre la dirección de destino:
+
+    `[url]http://www.google.com[/url]`
+  
+- Hipervínculo sobre texto de enlace: 
+  
+    `[url="http://www.google.com"]Google[/url]`
+
+
+## Bloques de texto
+
+En BBCode podemos marcar bloques de texto de utilidad especial de distintos tipos, p. ej.:
+
+- Citas, sin asignar autor:
+
+    `[quote]Lo siento mucho. Me he equivocado y no volverá a ocurrir.[/quote]`
+
+- Citas, asignando un autor:
+
+    `[quote="Hamlet"]To be or not to be. That is the question.[/quote]`
+
+- Código de programación: 
+
+    `[code]código_de_programación[/code]`
+
+- Otros tipos especiales de bloques de texto:
+    `[spoiler]En el último episodio, el protagonista muere...[/spoiler]`
+
+
+## Elementos anidados
+
+- Una de las principales ventajas de BBCode frente a otros lenguajes de marcas
+  ligeros es que los elementos se pueden anidar unos dentro de otros.
+
+- Para insertar una imagen que, a la vez, funcione como un enlace, podemos
+  escribir.
+
+    `[url="ruta_del_enlace"][img]ruta_de_la_imagen[/img][/url]`
+
+- Para formatear un texto con un tipo de letra, un tamaño y un color
+  determinadom podemos escribir:
+  
+    `[font="Courier New"][color="red"][size=14]Texto a formatear[/size][/color][/font]`
+  
+
+
+[^wikiml]: Wiki Markup http://en.wikipedia.org/wiki/Help:Wiki_markup
+
+[^mediawiki]: Mediawiki http://www.mediawiki.org
+
+[^wikisyntax]: Sintaxis de Wiki Markup http://en.wikipedia.org/wiki/Help:Wiki_markup

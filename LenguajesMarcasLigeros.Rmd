@@ -1,5 +1,5 @@
 ---
-title: "Lenguajes de marcas ligeros  | LMTW"
+title: "Lenguajes de marcas ligeros: Wiki Markup | LMTW"
 author: "Víctor Peinado"
 date: "24 de febrero de 2015"
 output: rmarkdown::tufte_handout
@@ -38,16 +38,16 @@ La sintaxis de Wiki Markup[^wikisyntax] permite fácilmente:
 
 Además de todo lo anterior, en Wiki Markup podemos:
 
-- Manejar [refencias, citas, fuentes](http://en.wikipedia.org/wiki/Help:Wiki_markup#References_and_citing_sources) de artículos, etc.
-- Gestionar palabras clave que permiten la insercción de [variables](http://en.wikipedia.org/wiki/Help:Wiki_markup#Variables) en el texto.
-- Crear automáticamente [índices de contenidos](http://en.wikipedia.org/wiki/Category:Wikipedia_table_of_contents_templates).
+- Crear automáticamente índices de contenidos. [^wikiindex]
 - Gestionar los interenlaces entre las distintas traducciones, redirecciones, las distintas versiones de una misma página de la wiki, etc.
-- Añadir información sobre [pronunciación](http://en.wikipedia.org/wiki/Help:Wiki_markup#Pronunciation_aids).
+- Manejar refencias, citas, fuentes [^wikirefs] de artículos, etc.
+- Gestionar palabras clave que permiten la insercción de variables[^wikivars] en el texto.
+- Añadir información sobre pronunciación.[^wiki-pronuciation]
 - ...
 
 ## Epígrafes y párrafos
 
-- Los títulos se encierran entre pares de símbolos de igual (`=`), tantos como escalones queramos bajar en la jerarquía de títulos.
+Los títulos se encierran entre pares de símbolos de igual (`=`), tantos como escalones queramos bajar en la jerarquía de títulos:
 
     `= Título de primer nivel = `
     
@@ -55,26 +55,28 @@ Además de todo lo anterior, en Wiki Markup podemos:
 
     `===== Título de quinto nivel =====`
 
-- Los párrafos no se marcan explícitamente. Cualquier conjunto de líneas de
-  texto seguidas será considerado un párrafo. Para separa párrafos, es
-  necesario introducir doble retorno de carro (doble *intro*).
+Los párrafos no se marcan explícitamente. Cualquier conjunto de líneas de texto seguidas será considerado un párrafo. Para separa párrafos, es necesario introducir doble retorno de carro (doble *intro*).
 
 
 ## Apariencia del texto
 
 - Cursivas entre dobles apóstrofos `''Cursiva''`
+
 - Negritas entre tripes apóstrofos: `''Negrita''`
+
 - Negrita y cursiva entre encerrando entre cinco pares de apóstrofos: `'''''Negrita y cursiva'''''`
+
 - Pequeños porciones de texto sin formato entre etiquetas 
   
     `<code>from nltk import corpus</code>`
 
 
-
 ## Listas no ordenadas
 
 - El inicio y final de las listas no se marca explícitamente. 
+
 - Los elementos de las listas se marcan con asterisco (`*`).
+
 - Las listas se pueden anidar.
 
     `* Item 1`
@@ -93,7 +95,9 @@ Además de todo lo anterior, en Wiki Markup podemos:
 ## Listas ordenadas
 
 - Como en el caso anterior, el inicio y final de las listas no se marca explícitamente. 
+
 - Los elementos de las listas se marcan con una almohadilla (`#`).
+
 - Las listas se pueden anidar.
 
     `# Item 1`
@@ -111,7 +115,7 @@ Además de todo lo anterior, en Wiki Markup podemos:
 
 ## Hiperenlaces
 
-En las wikis, existen varios tipos de [enlaces](http://en.wikipedia.org/wiki/Help:Wiki_markup#Links_and_URLs):
+Los enlaces se especifican entre corchetes `[enlace]`, pero habitualmente encontramos distintos tipos de enlaces[^wikilinks]:
 
 - **Enlaces internos**, que apuntan a otras páginas de la propia wiki.
 
@@ -126,13 +130,10 @@ En las wikis, existen varios tipos de [enlaces](http://en.wikipedia.org/wiki/Hel
     `Visita la página de la [http://www.ucm.es Universidad Complutense de
     Madrid].`
 
+
 ## Imágenes
 
-- Como mecanismo de control, no se pueden incluir que no hayan sido previamente
-  subidas al ser Mediawiki.
-
-- Una vez que las imágenes se han cargado, la sintaxis para incluirlas en una
-  págia es:
+Como mecanismo de control, en Wikipedia no se pueden incluir imágenes que no hayan sido previamente subidas a Mediawiki. Pero una vez que las imágenes se han cargado, la sintaxis para incluirlas en una página es la siguiente:
 
     `[[File:wiki.png]]`
 
@@ -143,6 +144,7 @@ En las wikis, existen varios tipos de [enlaces](http://en.wikipedia.org/wiki/Hel
 - Para insertar imágenes que funcionen como un enlace, la sintaxis es:
 
     `[[File:wiki.png|link=Wikipedia]]`
+
 
 # Markdown
 
@@ -438,3 +440,13 @@ En BBCode podemos marcar bloques de texto de utilidad especial de distintos tipo
 [^mediawiki]: Mediawiki http://www.mediawiki.org
 
 [^wikisyntax]: Sintaxis de Wiki Markup http://en.wikipedia.org/wiki/Help:Wiki_markup
+
+[^wikirefs]: Wiki Markup: referencias y citas http://en.wikipedia.org/wiki/Help:Wiki_markup#References_and_citing_sources
+
+[^wikiindex]: Wiki Markup: índices http://en.wikipedia.org/wiki/Category:Wikipedia_table_of_contents_templates
+
+[^wikivars]: Wiki Markup: variables http://en.wikipedia.org/wiki/Help:Wiki_markup#Variables
+
+[^wiki-pronuciation]: Wiki Markup: pronunciation http://en.wikipedia.org/wiki/Help:Wiki_markup#Pronunciation_aids
+
+[^wikilinks]: Wiki Markup: links http://en.wikipedia.org/wiki/Help:Wiki_markup#Links_and_URLs

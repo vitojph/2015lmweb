@@ -171,9 +171,9 @@ Os animo a participar en Wikipedia o en cualquiera de sus proyectos hermanos, pe
 
 - Añade una página (haz clic en **New Page**) y elige el título: para que pueda identificar la página de cada uno, vamos a seguir la siguiente convención: titula la página con tu apellido y la primera letra de tu nombre. Si te llamas Pepito Pérez, llama a tu página `perezp`. 
 
-- Configura el modo de edición como **MediaWiki** y elabora una entrada a modo de página de presentación demostrando que eres capaz de manejarte con las reglas de sintaxis básicas de Wiki Markup. No es necesario que la información sea verdad, puedes crearte un *alter ego* si lo prefieres.
+- Configura el modo de edición como **MediaWiki** y elabora una entrada a modo de página de presentación demostrando que eres capaz de manejarte con las reglas de sintaxis básicas de Wiki Markup. No es necesario que la información sea verdad, puedes crearte un *alter ego* si lo prefieres o elaborar una página con cosas que te interesen, no necesariamente relacionadas con la Lingüística. Sé creativo y pásatelo bien.
 
-- A medida que vayas añadiendo información, previsualiza el resultado final pulsando ne **Preview**. Vuelve a **Write** para seguir editando.
+- A medida que vayas añadiendo información, previsualiza el resultado final pulsando en **Preview**. Vuelve a **Write** para seguir editando. 
 
 - Si necesitas almacenar una copia, añade un pequeño mensaje explicando los cambios y haz clic en **Save Page**.
 

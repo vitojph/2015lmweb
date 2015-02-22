@@ -7,12 +7,15 @@ output: rmarkdown::tufte_handout
 
 # Lenguajes de Marcas Ligeros
 
-**TODO**
+Los lenguajes de marcas ligeros[^lightml] son lenguajes de marcas para formatear documentos diseñados, en principio, para simplificar el proceso de codificar documentos en HTML o XML. 
 
+Todos ellos tienen en común que manejan una sintaxis sencilla y no intrusiva, puedan ser editados fácilmente desde cualquier editor de texto y son legibles tanto en su formato original de edición como en su versión renderizada.
+
+En esta asignatura vamos a centrarnos en tres de estos lenguajes que se utilizan en la Weblk: Wiki Markup, Markdown y BBCode. Empecemos por el primero.
 
 # Wiki Markup
 
-Wiki Markup[^wikiml] es la sintaxis y el conjunto de palabras clave que usa el proyecto MediaWiki[^mediawiki] para publicar documentos. MediaWiki es el software sobre el que se construye  Wikipedia y otros proyectos paralelos como Wiktionary, Wikitravel, etc.
+Wiki Markup[^wikiml] es la sintaxis y el conjunto de palabras clave que usa el proyecto MediaWiki[^mediawiki] para publicar documentos. MediaWiki es el software sobre el que se construye Wikipedia y otros proyectos paralelos de Wikimedia Commons[^wikimedia] como Wiktionary[^wiktionary], Wikiquote[^wikiquote], Wikinews[^wikinews], Wikivoyage[^wikivoyage],  etc.
 
 Se trata de un *lenguaje de marcas ligero* que es fácilmente transformable en HTML. La principal ventaja es que permite teclear y formatear rápidamente páginas wiki, visualizables desde cualquier ordenador.
 
@@ -38,11 +41,11 @@ La sintaxis de Wiki Markup[^wikisyntax] permite fácilmente:
 
 Además de todo lo anterior, en Wiki Markup podemos:
 
-- Crear automáticamente índices de contenidos. [^wikiindex]
+- Crear automáticamente índices de contenidos.[^wikiindex]
 
 - Gestionar los interenlaces entre las distintas traducciones, redirecciones, las distintas versiones de una misma página de la wiki, etc.
 
-- Manejar refencias, citas, fuentes [^wikirefs] de artículos, etc.
+- Manejar referencias, citas, fuentes de artículos, etc.[^wikirefs]
 
 - Gestionar palabras clave que permiten la insercción de variables en el texto.[^wikivars]
 
@@ -62,25 +65,23 @@ Los títulos se encierran entre pares de símbolos de igual (`=`), tantos como e
 
 Los párrafos no se marcan explícitamente. Cualquier conjunto de líneas de texto seguidas será considerado un párrafo. Para separar párrafos, es necesario introducir doble retorno de carro (doble *intro*).
 
-    Mi primer párrafo: lorem ipsum...
-    
-    Mi segundo párrafo: lorem ipsum...
+    Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in...
 
+    Ius id vidit volumus mandamus, vide veritus democritum te nec...
 
 ## Apariencia del texto
 
-El texto en *cursiva* se encierra entre asteriscos o apóstrofos:
+El texto en *cursiva* se encierra entre dos pares de apóstrofos:
 
-    Este texto está en *cursiva*. 'Este' también.
+    Este texto está en ''cursiva''. 
 
-El texto en **negrita** se encierra entre dobles asteriscos o dobles apóstrofos: 
+El texto en **negrita** se encierra entre triples pares de apóstrofos: 
 
-    Este texto está en **negrita**. ''Este'' también.
-
+    Este texto está en '''negrita'''.
+    
 Si es necesario formatear texto a la vez en ***Negrita y cursiva*** podemos encerrarlo entre tres pares de asteriscos o apóstrofos: 
 
-    Este texto está en ***requete marcado***. '''Este''' también.
-
+    Este texto está en '''''requete marcado'''''.
 
 Para añadir pequeñas porciones de texto sin formato, que habitualmente aparecen con fuente de ancho fijo, podemos usar las etiquetsa `<code>`:
   
@@ -164,7 +165,36 @@ Como mecanismo de control, en Wikipedia no se pueden incluir imágenes que no ha
 
 # Ejercicio
 
-**TODO**
+Os animo a participar en Wikipedia o en cualquiera de sus proyectos hermanos, pero para juguetear con Wiki Markup y para realizar parte de las prácticas de esta asignatura he creado una wiki en Github[^wikigithub]. 
+
+- Para poder editar, créate una cuenta de usuario en Github[^github] entrando en https://github.com/join.
+
+- Añade una página (haz clic en **New Page**) y elige el título: para que pueda identificar la página de cada uno, vamos a seguir la siguiente convención: titula la página con tu apellido y la primera letra de tu nombre. Si te llamas Pepito Pérez, llama a tu página `perezp`. 
+
+- Configura el modo de edición como **MediaWiki** y elabora una entrada a modo de página de presentación demostrando que eres capaz de manejarte con las reglas de sintaxis básicas de Wiki Markup. No es necesario que la información sea verdad, puedes crearte un *alter ego* si lo prefieres.
+
+- A medida que vayas añadiendo información, previsualiza el resultado final pulsando ne **Preview**. Vuelve a **Write** para seguir editando.
+
+- Si necesitas almacenar una copia, añade un pequeño mensaje explicando los cambios y haz clic en **Save Page**.
+
+- Cuando hayas terminado, asegúrate de que todo está a tu gusto, almacena la copia definitiva y avísame enviándome un mensaje de correo-e.
+
+
+[^wikigithub]: https://github.com/vitojph/2015lmweb/wiki
+
+[^github]: GitHub: https://github.com/
+
+[^lightml]: Lightweight Markup Language http://en.wikipedia.org/wiki/Lightweight_markup_language
+
+[^wikimedia]: Wikimedia Commons http://commons.wikimedia.org/wiki/Main_Page
+
+[^wikiquote]: Wikiquote http://en.wikiquote.org
+
+[^wiktionary]: Wiktionary http://en.wiktionary.org
+
+[^wikinews]: Wikinews http://en.wikinews.org
+
+[^wikivoyage]: Wikivoyage http://en.wikivoyage.org
 
 [^wikiml]: Wiki Markup http://en.wikipedia.org/wiki/Help:Wiki_markup
 
@@ -181,3 +211,4 @@ Como mecanismo de control, en Wikipedia no se pueden incluir imágenes que no ha
 [^wikipronuciation]: Wiki Markup: pronunciation http://en.wikipedia.org/wiki/Help:Wiki_markup#Pronunciation_aids
 
 [^wikilinks]: Wiki Markup: links http://en.wikipedia.org/wiki/Help:Wiki_markup#Links_and_URLs
+

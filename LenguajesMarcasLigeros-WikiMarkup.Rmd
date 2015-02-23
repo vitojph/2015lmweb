@@ -1,5 +1,5 @@
 ---
-title: "Lenguajes de marcas ligeros: Wiki Markup | LMTW"
+title: "Dando formato sin marcas" | LMTW"
 author: "Víctor Peinado"
 date: "24 de febrero de 2015"
 output: rmarkdown::tufte_handout

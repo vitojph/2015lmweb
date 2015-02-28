@@ -106,7 +106,7 @@ Para añadir pequeñas porciones de texto sin formato, que habitualmente aparece
 
     `*** Sub-item 3.1.1`
 
-    `* Sub-item 4`
+    `* Item 4`
 
 
 ## Listas ordenadas
@@ -127,7 +127,7 @@ Para añadir pequeñas porciones de texto sin formato, que habitualmente aparece
 
     `### Sub-item 3.1.1`
 
-    `# Sub-item 4`
+    `# Item 4`
 
 
 ## Hiperenlaces

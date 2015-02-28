@@ -79,7 +79,7 @@ El texto en **negrita** se encierra entre triples pares de apóstrofos:
 
     Este texto está en '''negrita'''.
     
-Si es necesario formatear texto a la vez en ***Negrita y cursiva*** podemos encerrarlo entre tres pares de asteriscos o apóstrofos: 
+Si es necesario formatear texto a la vez en ***Negrita y cursiva*** podemos encerrarlo entre cinco pares de apóstrofos: 
 
     Este texto está en '''''requete marcado'''''.
 

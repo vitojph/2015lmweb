@@ -41,7 +41,7 @@ Veamos cómo hacerlo.
 
 ## Epígrafes y párrafos
 
-Los títulos se marcan con almohadillas: una almohadilla para títulos de primer nivel, dos para titulos de segundo nivel, etc.
+Los títulos se marcan con el símbolo de la almohadilla (\#): una almohadilla para títulos de primer nivel, dos para titulos de segundo nivel, etc.
 
     # Título de primer nivel
     
@@ -49,13 +49,11 @@ Los títulos se marcan con almohadillas: una almohadilla para títulos de primer
 
     ##### Título de quinto nivel
 
-
 Los párrafos no se marcan explícitamente. Cualquier conjunto de líneas de texto seguidas será considerado un párrafo. Para separar párrafos, es necesario introducir doble retorno de carro (doble *intro*).
 
     Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in...
 
     Ius id vidit volumus mandamus, vide veritus democritum te nec...
-
 
 ## Apariencia del texto
 
@@ -77,7 +75,6 @@ Para añadir pequeñas porciones de texto sin formato, que habitualmente aparece
     Este texto `no tiene formato`.
   
 Si necesitamos incluir más de una línea de texto sin formato, es más cómodo sangrar el texto.
-
 
 ## Listas no ordenadas
 
@@ -216,3 +213,4 @@ Si necesitamos insertar cualquiera de estos símbolos es preciso *escaparlos*, e
 [^markdown-syntax]: Sintaxis de Markdown http://daringfireball.net/projects/markdown/syntax
 
 [^wordpress]: WordPress: https://www.wordpress.com
+

@@ -200,11 +200,33 @@ Si necesitamos insertar cualquiera de estos símbolos es preciso *escaparlos*, e
 
 # Ejercicio
 
+Para practicar con Markdown tenemos el wiki en Github[^wikigithub] y un blog en Wordpress[^lmblog]. En esta segunda práctica, vamos a crear una entrada con contenido lingüístico.
+
+1. Edición en Markdown en el wiki: 
+
+  - Para poder editar el wiki, ya sabes que necesitas crearte una cuenta de usuario en Github[^github]. 
+
+  - Añade una página (haz clic en **New Page**) y elige el título: para que pueda identificar la página de cada uno, vamos a seguir la siguiente convención: titula la página con tu apellido y la primera letra de tu nombre. Si te llamas Pepito Pérez, llama a tu página `perezp-ling`. 
+
+  - Configura el modo de edición como **Markdown** y elabora una página con contenido lingüístico demostrando que eres capaz de manejarte con las reglas de sintaxis básicas de Markdown. 
+
+  - A medida que vayas añadiendo información, previsualiza el resultado final pulsando en **Preview**. Vuelve a **Write** para seguir editando. 
+
+  - Si necesitas almacenar una copia, añade un pequeño mensaje explicando los cambios y haz clic en **Save Page**.
+
+
+2. Edición en Markdown en el blog:
+
+- Para poder editar entradas en el blog, necesitas crearte (si no la tienes) una cuenta de WordPress[^wordpress] y enviarme un correo con tu nombre de usuario, para que pueda invitarte como *autor*/*editor*.
+
+- Una vez logueado en Wordpress, puedes añadir una nueva entrada de varias maneras (haz clic en *Create a new post* o en *Blog post > Add*) y comienza a editar. Recuerda que puedes (y debes) formatear tu entrada en Markdown.
+
+- Cuando hayas terminado, asegúrate de que todo está a tu gusto, publica tu entrada y avísame enviándome un mensaje de correo-e.
 
 
 [^wikigithub]: https://github.com/vitojph/2015lmweb/wiki
 
-[^github]: GitHub: https://github.com/
+[^github]: https://github.com/
 
 [^lightml]: Lightweight Markup Language http://en.wikipedia.org/wiki/Lightweight_markup_language
 
@@ -212,5 +234,6 @@ Si necesitamos insertar cualquiera de estos símbolos es preciso *escaparlos*, e
 
 [^markdown-syntax]: Sintaxis de Markdown http://daringfireball.net/projects/markdown/syntax
 
-[^wordpress]: WordPress: https://www.wordpress.com
+[^wordpress]: https://www.wordpress.com
 
+[^lmblog]: https://2015lmweb.wordpress.com

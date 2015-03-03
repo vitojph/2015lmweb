@@ -1,10 +1,3 @@
----
-title: "Editores de texto | LMTW"
-author: "Víctor Peinado"
-date: "24 de febrero de 2015"
-output: rmarkdown::tufte_handout
----
-
 # Editores de texto profesionales
 
 En clase (y en casa) vamos a utilizar dos **editores de texto** más potentes que el bloc de notas que ya conocemos: se trata de Notepad++[^notepad] y SublimeText[^sublimetext].

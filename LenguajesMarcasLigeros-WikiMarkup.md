@@ -1,10 +1,3 @@
----
-title: "Lenguajes de Marcas Ligeros: Wiki Markup | LMTW"
-author: "Víctor Peinado"
-date: "24 de febrero de 2015"
-output: rmarkdown::tufte_handout
----
-
 # Lenguajes de Marcas Ligeros
 
 Los lenguajes de marcas ligeros[^lightml] son lenguajes de marcas para formatear documentos diseñados, en principio, para simplificar el proceso de codificar documentos en HTML o XML. 

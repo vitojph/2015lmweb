@@ -1,10 +1,3 @@
----
-title: "Tipos de Información  | LMTW"
-author: "Víctor Peinado"
-date: "19 de febrero de 2015"
-output: rmarkdown::tufte_handout
----
-
 # Referencias
 
 - Introducción de Salton [^salton]

@@ -13,13 +13,14 @@ Tras ver una introducción de Wiki Markup, el lenguaje de marcas de Wikipedia, v
 
 # Markdown
 
-Markdown es un lenguaje de marcas ligero que recientement ha adquirido mucha popularidad como lenguaje de marcas en blogs (Wordpress[^wordpress] lo utiliza por defecto) y como lenguaje para la documentación de proyectos de software libre.
+Markdown es un lenguaje de marcas ligero que recientement ha adquirido mucha popularidad como lenguaje de marcas en blogs (Wordpress[^wordpress] lo utiliza por defecto) y como lenguaje para la documentación de proyectos de software libre. Desafortunadamente, no existe una versión estandarizada de Markdown, y hay varias versiones[^sabores], que no siempre funcionan en todas las plataformas.
 
 - Es un lenguaje de marcas sencillo que es fácilmente traducible a distintas versiones de HTML o a PDF.
 
 - La principal ventaja es que permite teclear y formatear rápidamente el texto.
 
 - Ojo, como pasaba con Wiki Markdown, no hay programas que interpreten Markdown directamente: es necesario *transformarlo* previamente a formatos de visualización. Sin embargo, el código es perfectamente legible desde cualquier editor de texto.
+
 
 
 ## Funcionalidades de Markdown
@@ -208,7 +209,7 @@ Para practicar con Markdown tenemos el wiki en Github[^wikigithub] y un blog en 
 
   - Añade una página (haz clic en **New Page**) y elige el título: para que pueda identificar la página de cada uno, vamos a seguir la siguiente convención: titula la página con tu apellido y la primera letra de tu nombre. Si te llamas Pepito Pérez, llama a tu página `perezp-ling`. 
 
-  - Configura el modo de edición como **Markdown** y elabora una página con contenido lingüístico demostrando que eres capaz de manejarte con las reglas de sintaxis básicas de Markdown. 
+  - Configura\marginnote{¿Necesitas ideas? Trata de explicarle a una audiencia no experta cómo se relacionan las lenguas del mundo, qué es una familia lingüística, qué es un fonema, qué mecanismos de formación de palabras existen en tu lengua, qué es un sintagma, qué es una gramática formal, cómo podemos organizar los significados de las palabras de una lengua, qué es un acto de habla, qué es una implicatura, etc. Creo que es más sencillo abordar definiciones concretas, mejor que entradas largas tratando de presentar las hipótesis acerca del origen del lenguaje, pero elige tú.} el modo de edición como **Markdown** y elabora una página con contenido lingüístico demostrando que eres capaz de manejarte con las reglas de sintaxis básicas de Markdown. Es suficiente con tratar de definir de manera divulgativa algún concepto fundamental de los estudios de lingüística.
 
   - A medida que vayas añadiendo información, previsualiza el resultado final pulsando en **Preview**. Vuelve a **Write** para seguir editando. 
 
@@ -237,3 +238,5 @@ Para practicar con Markdown tenemos el wiki en Github[^wikigithub] y un blog en 
 [^wordpress]: https://www.wordpress.com
 
 [^lmblog]: https://2015lmweb.wordpress.com
+
+[^sabores]: https://2015lmweb.wordpress.com/2015/03/04/markdown-de-sabores

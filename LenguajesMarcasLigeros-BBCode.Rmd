@@ -1,19 +1,17 @@
 ---
 title: "Lenguajes de Marcas Ligeros: BBCode | LMTW"
 author: "Víctor Peinado"
-date: "3 de marzo de 2015"
+date: "1o de marzo de 2015"
 output: rmarkdown::tufte_handout
 ---
 
 # Referencias
 
-
-
 # Lenguajes de Marcas Ligeros
 
-Pequeña intro
+Como ya hemos visto en los temas anteriores, los lenguajes de marcas ligeros[^lightml] son lenguajes de marcas para formatear documentos diseñados, en principio, para simplificar el proceso de codificar documentos en HTML o XML. 
 
-
+Tras ver una introducción de Wiki Markup y Markdown, vamos a presentar brevemente BBCode[^bbcode], un lenguaje de marcas utilizado habitualmente en foros de discusión y listas de correo.
 
 
 # BBCode

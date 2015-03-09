@@ -175,6 +175,20 @@ Para formatear un texto con un tipo de letra, un tamaño y un color determinadom
     [font="Courier New"][color="red"][size=14]Texto a formatear[/size][/color][/font]
   
 
+# Ejercicio
+
+En este caso no vamos a hacer práctica pero para practicar con BBCode podemos utilizar algunas webs de pruebas como:
+
+- Página de pruebas de BBCode[^testing]
+
+- Otra página de pruebas de BBCode[^testing-bbcode]
+
+- La página de pruebas de vBulletin[^testing-vbulletin]
+
+
 
 [^bbcode]: BBCode http://es.wikipedia.org/wiki/BBCode
 [^bbcode-syntax]: Sintaxis de BBCode http://www.bbcode.org/reference.php
+[^testing-vbulletin]: http://www.vbulletin.com/forum/forum/general/a-place-to-test-things-out/247103-test-bbcode
+[^testing-bbcode]: http://www.tytyweb.net/projects/smf/bbcode/
+[^testing]: http://snafu.dasourcerer.net/bbcode/

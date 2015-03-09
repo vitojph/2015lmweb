@@ -71,9 +71,9 @@ Si tienes interés en instalar por tu cuenta las herramientas de \LaTeX\ en algu
  
 Afortunadamente para vosotros no vamos a instalar nada. Vamos a hacer todas las pruebas usando herramientas web para editar \LaTeX\ desde un navegador y generar documentos en PDF, a saber: \marginnote{Juguetea y aprende a manejarte con los dos.}
 
-- Mi favorito: writeLaTex[^writelatex]
+- Overleaf[^overleaf]
 
-- Otra alternativa: spandex.io[^spandex]
+- sharelatex[^sharelatex]
 
 
 # Estructura de un documento \LaTeX
@@ -172,8 +172,9 @@ Para comenzar, revisa:
 [^listas]: Listas http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Entornos_de_enumeraci%C3%B3n
 [^tablas]: Tablas http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Tablas
 
-[^writelatex]: https://www.writelatex.com
-[^spandex]: https://spandex.io
+[^overleaf]: https://www.overleaf.com/
+[^sharelatex]: https://www.sharelatex.com/
+
 
 [^install-win]: http://es.wikibooks.org/wiki/Manual_de_LaTeX/Datos_preliminares/Instalaci%C3%B3n_en_MS_Windows
 [^install-osx]: http://es.wikibooks.org/wiki/Manual_de_LaTeX/Datos_preliminares/Instalaci%C3%B3n_en_OS_X

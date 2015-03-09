@@ -19,7 +19,7 @@ Markdown es un lenguaje de marcas ligero que recientement ha adquirido mucha pop
 
 - La principal ventaja es que permite teclear y formatear rápidamente el texto.
 
-- Ojo, como pasaba con Wiki Markdown, no hay programas que interpreten Markdown directamente: es necesario *transformarlo* previamente a formatos de visualización. Sin embargo, el código es perfectamente legible desde cualquier editor de texto.
+- Ojo, como pasaba con Wiki Markup, no hay programas que interpreten Markdown directamente: es necesario *transformarlo* previamente a formatos de visualización. Sin embargo, el código es perfectamente legible desde cualquier editor de texto.
 
 
 

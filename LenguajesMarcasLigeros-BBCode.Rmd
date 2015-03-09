@@ -11,123 +11,134 @@ output: rmarkdown::tufte_handout
 
 Como ya hemos visto en los temas anteriores, los lenguajes de marcas ligeros[^lightml] son lenguajes de marcas para formatear documentos diseñados, en principio, para simplificar el proceso de codificar documentos en HTML o XML. 
 
-Tras ver una introducción de Wiki Markup y Markdown, vamos a presentar brevemente BBCode[^bbcode], un lenguaje de marcas utilizado habitualmente en foros de discusión y listas de correo.
+Tras ver una introducción de Wiki Markup y Markdown, vamos a presentar brevemente BBCode, un lenguaje de marcas utilizado habitualmente en foros de discusión y listas de correo.
 
 
 # BBCode
 
-- [BBCode](http://es.wikipedia.org/wiki/BBCode) (*Bulletin Board Code*) es un lenguaje de marcas ligero utilizadoi habitualmente en foros de discusión y listas de correo para dar formato al texto.
-- Como veremos más adelante, se trata de una simplifación de HTML.
-  - Su principal ventaja es que es más sencillo y cómodo de teclear.
-- Al contrario que otros lenguajes similares, no está regulado por ningún organismo, aunque los [conceptos básicos de su sintaxis](http://www.bbcode.org/reference.php) se mantienen estables.
-- Los navegadores no interpretan directamente BBCode: en necesario que el foro
-  (o el gestor de la lista de correo) *traduzca* las etiquetas BBCode a HTML.
+BBCode[^bbcode] (*Bulletin Board Code*) es un lenguaje de marcas ligero utilizado habitualmente en foros de discusión y listas de correo para dar formato al texto. Como veremos más adelante, se trata claramente de una simplifación de HTML. Su principal ventaja es que es más sencillo y cómodo de teclear.
+
+Al contrario que otros lenguajes similares, no está regulado por ningún organismo, aunque los conceptos básicos de su sintaxis se mantienen estables.
+
+Como hemos visto con Wiki Markup y Markdown, los navegadores no interpretan directamente BBCode: en necesario que el foro (o el gestor de la lista de correo) *traduzca* las etiquetas BBCode a HTML.
+
 
 ## Funcionalidades de BBCode
 
-Las etiquetas de BBCode permiten:
+Las sintaxis de de BBCode[^bbcode-syntax] permite, básicamente:
 
 - Modificar la apariencia del texto.
+
 - Insertar imágenes.
+
 - Insertar hipervínculos.
+
 - Organizar listas de elementos de manera ordenada.
+
 - Marcar distintos bloques de texto de manera diferenciada.
+
 
 ## Estructura y sintaxis
 
-- Los **elementos** son la estructura básica del lenguaje.
-- Cada elemento tiene dos propiedades esenciales: **contenido** y **atributos**.
-- Los **elementos** en BBCode poseen una etiqueta de inicio y una etiqueta de cierre, y el contenido queda enmarcado entre ambas etiquetas. 
-    - Los nombres de etiqueta se delimitan entre corchetes `[etiqueta]`. 
-    - La etiqueta de inicio se especifica entre corchetes, sin más:
-      `[etiqueta]`.
-    - La etiquta de cierre se especifica añadiendo una barra antes del nombre
-      de elemento: `[/etiqueta]`.
-- Algunas etiquetas pueden incluir modificadores que reciben el nombre de
-  **atributos**.
-    - El valor del atributo se asigna en la propia etiqueta con el símbolo `=`.  
-- La sintaxis general es entonces:
+La sintaxis de BBCode define el uso de un conjunto de **elementos** que forman la estructura básica del lenguaje. Cada elemento tiene dos propiedades esenciales: **contenido** y **atributos**. 
 
-    `[nombre_etiqueta="atributo"] Contenido [/nombre_etiqueta]`
+Los **elementos** en BBCode poseen una etiqueta de inicio y una etiqueta de cierre, y el contenido queda enmarcado entre ambas etiquetas. Los nombres de etiqueta se delimitan entre corchetes `[etiqueta]`. La etiqueta de inicio se especifica entre corchetes, sin más:
+
+    [etiqueta]
+    
+La etiquta de cierre se especifica añadiendo una barra antes del nombre de elemento: 
+
+    [/etiqueta]
+    
+
+Algunas etiquetas pueden incluir modificadores o características extra que reciben el nombre de **atributos**. El valor de estos atributos se asigna en la propia etiqueta con el símbolo `=`. Por lo tanto, la sintaxis general es entonces:
+
+    [nombre_etiqueta="atributo"] Contenido [/nombre_etiqueta]
+    
+    
 
 ## Apariencia del texto
 
+Los elementos BBCode que permiten modificar la apariencia del texto son:
+
 - Negritas: `[b]Negrita[/b]`
+
 - Cursiva: `[i]Cursiva[/i]`
+
 - Subrayado: `[u]Subrayado[/u]`
+
 - Tachado: `[s]Tachado[/s]`
+
 - Tamaño de fuente: `[size=18]Tamaño 18[/size]`
+
 - Tipo de fuente: `[font="Arial"]Tipo de letra Arial[/font]`
+
 - Color de fuente: `[color="green"]Letra en color verde[/color]`
 
 
-## Listas no ordenadas
+## Listas
 
-- Listas desordenadas, que muestra una serie de elementos de manera secuencial
+Podemos organizar listas no ordenadas, que muestra una serie de elementos de manera secuencial:
   
-    `[list]`
+    [list]
 
-    `[*]Primer ítem`
+    [*]Primer elemento
 
-    `[*]Segundo ítem`
+    [*]Segundo
 
-    `[*]Tercer ítem`
+    [*]Última cosa
 
-    `[/list]`
+    [/list]
 
 
-## Listas ordenadas numeradas
+Y listas ordenadas numéricamente, añadiendo un atributo al elemento `list`: 
 
-- Listas ordenadas numéricamente: 
-
-    `[list=1]`
+    [list=1]
  
-    `[*]Ir a la tienda`
+    [*]Ir a la tienda
 
-    `[*]Comprar una nueva PC`
+    [*]Comprar un lechuga
     
-    `[*]Insultar a la PC cuando se cuelgue`
+    [*]Insultar al ordenador cuando se cuelgue
     
-    `[/list]`
+    [/list]
 
-## Listas ordenadas alfabéticas
 
-- Listas ordenadas alfabéticamente:
+También podemos marcar listas ordenadas alfabéticamente:
 
-    `[list=a]`
+    [list=a]
     
-    `[*]Ir a la tienda`
+    [*]Ir a la tienda
+
+    [*]Comprar un lechuga
     
-    `[*]Comprar una nueva PC`
+    [*]Insultar al ordenador cuando se cuelgue
     
-    `[*]Insultar a la PC cuando se cuelgue`
-    
-    `[/list]`
+    [/list]
 
 
 ## Inserción de Imágenes
 
-- La sintaxis general para insertar imágenes es:
+La sintaxis general para insertar imágenes es:
 
-    `[img]ruta_de_la_imagen[/img]`
+    [img]ruta_de_la_imagen[/img]
 
-- Es posible configurar las dimensiones de la imagen utilizando los atributos
-  `width` y `heigth`, como en:
+Es posible configurar las dimensiones de la imagen utilizando los atributos `width` y `heigth`, como en el siguiene ejemplo:
 
-    `[img width=264 height=240]ruta_de_la_imagen[/img]`
+    [img width=264 height=240]ruta_de_la_imagen[/img]
 
 
 ## Hiperenlaces
 
 Existen dos variantes de hiperenlaces que podemos insertar en BBCode:
 
-- Hipervínculo directamente sobre la dirección de destino:
+1. Hipervínculo directamente sobre la dirección de destino:
 
-    `[url]http://www.google.com[/url]`
+    [url]http://www.google.com[/url]
   
-- Hipervínculo sobre texto de enlace: 
+2. Hipervínculo sobre texto de enlace: 
   
-    `[url="http://www.google.com"]Google[/url]`
+    [url="http://www.google.com"]Google[/url]
 
 
 ## Bloques de texto
@@ -136,32 +147,34 @@ En BBCode podemos marcar bloques de texto de utilidad especial de distintos tipo
 
 - Citas, sin asignar autor:
 
-    `[quote]Lo siento mucho. Me he equivocado y no volverá a ocurrir.[/quote]`
+    [quote]Lo siento mucho. Me he equivocado y no volverá a ocurrir.[/quote]
 
 - Citas, asignando un autor:
 
-    `[quote="Hamlet"]To be or not to be. That is the question.[/quote]`
+    [quote="Hamlet"]To be or not to be. That is the question.[/quote]
 
 - Código de programación: 
 
-    `[code]código_de_programación[/code]`
+    [code]código_de_programación[/code]
 
 - Otros tipos especiales de bloques de texto:
-    `[spoiler]En el último episodio, el protagonista muere...[/spoiler]`
+
+    [spoiler]En el último episodio, el protagonista muere...[/spoiler]
 
 
 ## Elementos anidados
 
-- Una de las principales ventajas de BBCode frente a otros lenguajes de marcas
-  ligeros es que los elementos se pueden anidar unos dentro de otros.
+Una de las principales ventajas de BBCode frente a otros lenguajes de marcas ligeros es que los elementos se pueden anidar unos dentro de otros.
 
-- Para insertar una imagen que, a la vez, funcione como un enlace, podemos
-  escribir.
+Para insertar una imagen que, a la vez, funcione como un enlace, podemos escribir.
 
-    `[url="ruta_del_enlace"][img]ruta_de_la_imagen[/img][/url]`
+    [url="ruta_del_enlace"][img]ruta_de_la_imagen[/img][/url]
 
-- Para formatear un texto con un tipo de letra, un tamaño y un color
-  determinadom podemos escribir:
+Para formatear un texto con un tipo de letra, un tamaño y un color determinadom podemos escribir:
   
-    `[font="Courier New"][color="red"][size=14]Texto a formatear[/size][/color][/font]`
+    [font="Courier New"][color="red"][size=14]Texto a formatear[/size][/color][/font]
   
+
+
+[^bbcode]: BBCode http://es.wikipedia.org/wiki/BBCode
+[^bbcode-syntax]: Sintaxis de BBCode http://www.bbcode.org/reference.php

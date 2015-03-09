@@ -7,18 +7,18 @@ output: rmarkdown::tufte_handout
 
 # Referencias
 
-- *The Not So Short Introduction to LaTeX*[^notshortintro].
+- *The Not So Short Introduction to LaTeX*.[^notshortintro]
 
-- *Manual de LaTeX*[^wikibook-latex-es].
+- *Manual de LaTeX*.[^wikibook-latex-es]
 
-- *A Guide to LaTeX*[^wikibook-latex-en].
+- *A Guide to LaTeX*.[^wikibook-latex-en]
 
-- *LaTeX for Linguists*[^latex-ling].
+- *LaTeX for Linguists*.[^latex-ling]
 
-- *LaTeX for Mathematics*[^latex-maths].
+- *LaTeX for Mathematics*.[^latex-maths]
 
 
-# Introducción a LaTeX
+# Introducción a \LaTeX
 
 \LaTeX\ no es un procesador de textos WYSIWYG\marginnote{WYSIWYG: \textit{What You See is What You Get}} como MS Word o el Writer de LibreOffice. Es más bien un *lenguaje de programación* que permite escribir un texto de forma estructurada y convertirlo en documentos para ser leídos o impresos con una gran calidad tipográfica.
 
@@ -63,13 +63,16 @@ Por último, \LaTeX\ es casi un estándar en la producción de documentación ci
 Si tienes interés en instalar por tu cuenta las herramientas de \LaTeX\ en alguno de tus ordenadores, sigue las instrucciones:
 
 - Instalación en Windows[^install-win]
-- Instalación en Os X[^install-osx]
+
+- Instalación en OS X[^install-osx]
+
 - Instalación en Linux[^install-linux]
  
  
 Afortunadamente para vosotros no vamos a instalar nada. Vamos a hacer todas las pruebas usando herramientas web para editar \LaTeX\ desde un navegador y generar documentos en PDF, a saber: \marginnote{Juguetea y aprende a manejarte con los dos.}
 
 - Mi favorito: writeLaTex[^writelatex]
+
 - Otra alternativa: spandex.io[^spandex]
 
 
@@ -110,29 +113,42 @@ Todo lo que se escriba con posterioridad a esta instrucción será ignorado y no
 
 # Escribiendo texto
 
-- [Espacios](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Espacios)
-- [Caracteres especiales](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Caracteres_especiales)
-- [Tamaños, estilos y tipos de letra](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Tama%C3%B1os,_estilos_y_tipos_de_letra)
-- [Alineación de texto](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Alineaci%C3%B3n_del_texto)
-- [Portadas de
- documento](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Portada_del_documento)
-- [Capítulos y secciones](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Cap%C3%ADtulos_y_secciones)
-- [Referencias](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Referencias)
-- [Notas a pie](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Notas_al_pie)
-- [Listas](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Entornos_de_enumeraci%C3%B3n)
-- [Tablas](http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Tablas)
+A continuación repasamos cómo se manejan diferentes características del texto, como:
+
+- Espacios[^espacios] y caracteres especiales.[^especiales]
+
+- Tamaños, estilos y tipos de letra.[^tamaños]
+
+- Alineación del texto.[^texto]
+
+- Portadas.[^portadas]
+
+- Estructurar el documento en partes, capítulos, secciones.[^caps]
+
+- Referencias y citas.[^refs]
+
+\newpage
+
+- Notas a pie.[^notas]
+
+- Listas de elementos.[^listas]
+
+- Tablas.[^tablas]
 
 
-# \LaTeX\ para Lingüística
+# \LaTeX\ para Lingüistas
 
-- [Paquetes de LaTeX para
- Lingüística](http://en.wikibooks.org/wiki/LaTeX/Linguistics).
-- [The LaTeX for Linguists Home Page](http://www.essex.ac.uk/linguistics/external/clmt/latex4ling)
-- [TIPA: a System for Processing Phonetic Symbols in LaTeX](http://www.tug.org/tugboat/tb17-2/tb51rei.pdf)
+Como hemos comentado antes, \LaTeX\ propociona un marco de trabajo excelente si necesitamos crear documentos que contengan símbolos fonéticos, árboles sintácticos y otros formalismos utilizados habitualmente en Lingüística.
+
+Para comenzar, revisa:
+
+- El listado de herramientas de Lingüística para \LaTeX.[^latex-ling]
+- La web *LaTeX for Linguists*.[^latex4linguistics]
+- La documentación del paquete TIPA,[^tipa] el sistema para incluir símbolos del *International Phonetic Alphabet* (IPA).
 
 
 
-[^notshortintro]: *The Not So Short Introduction to LaTeX* 
+[^notshortintro]: *The Not So Short Introduction to LaTeX* https://tobi.oetiker.ch/lshort/lshort.pdf
 [^wikibook-latex-es]: *Manual de LaTeX* http://es.wikibooks.org/wiki/Manual_de_LaTeX
 [^wikibook-latex-en]: *A Guide to LaTeX* http://en.wikibooks.org/wiki/LaTeX
 [^latex-ling]: Linguistics Packages for LaTeX http://en.wikibooks.org/wiki/LaTeX/Linguistics

@@ -185,6 +185,7 @@ En este caso no vamos a hacer práctica pero para practicar con BBCode podemos u
 
 - La página de pruebas de vBulletin[^testing-vbulletin]
 
+Desgraciadamente, ninguna de estas páginas acepta todos los ejemplos que muestro en esta presentación. Prueba en unas y otras.
 
 
 [^bbcode]: BBCode http://es.wikipedia.org/wiki/BBCode

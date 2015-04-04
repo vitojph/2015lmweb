@@ -121,15 +121,17 @@ En general, los enlaces se especifican encerrando el texto del enlace entre corc
 
 Podemos incluir, de manera opcional, un título al enlace. 
   
-    Este texto contiene un [enlace a la web de la UCM](http://www.ucm.es "Universidad Complutense de Madrid")
+    Este texto contiene un [enlace a la web de la UCM](http://www.ucm.es 
+    "Universidad Complutense de Madrid")
   
 También es posible crear enlaces automáticos sobre URLs o direcciones de correo-e, encerrándolos entre paréntesis angulares (`<>`).
 
-    Para más información, visita <http://www.ucm.es> o escribe un mensaje a <info@ucm.es>.
+    Para más información, visita <http://www.ucm.es> o escribe 
+    un mensaje a <info@ucm.es>.
 
 ## Imágenes
 
-La sintaxis general para insertar imágenes es similar a la de los enlaces: entre corchetes ponemos un texto descriptivo de la imagen y entre paréntesis la ruta al fichero que contienen la imagen.
+La sintaxis general para insertar imágenes es similar a la de los enlaces: entre corchetes ponemos un texto descriptivo de la imagen y entre paréntesis la ruta al fichero que contienen la imagen.\marginnote{Ojo con las imágenes, algunos sitios web ponen problemas para publicarlas. Lo más sencillo es enlazar imágenes que estén disponibles públicamente online.}
 
     ![Texto alternativo](ruta_a_la_imagen)
 
@@ -138,7 +140,9 @@ La sintaxis general para insertar imágenes es similar a la de los enlaces: entr
 
 ## Tablas
 
-Para formetar tablas podemos utilizar guiones `-` y barras verticales `|` para indicar dónde comienzan y dónde terminan las columnas. Las filas se especifican en líneas diferentes, una detrás de otras. Además, podemos elegir la justificación del texto de las columnas, insertando símbolos de dos puntos `:`. 
+No todos los *sabores* de Markdown[^sabores] aceptan tablas. De hecho, si intentas seguir el siguiente ejemplo en GitHub o en WordPress no te va a funcionar :-/ En otras versiones enriquecidas, como RMarkdown (la versión que yo utilizo para elaborar estas notas), sí funcionan. Puedes ver el código fuente de este documento [^fuente] y un par de vídeos: uno usando RMarkdown[^video1] y otro vídeo usando `atom`, un editor muy similar a `SublimeText`.[^video2]
+
+Para formetar tablas podemos utilizar guiones `-` y barras verticales `|` para indicar dónde comienzan y dónde terminan las columnas. Las filas se especifican en líneas diferentes, una detrás de otras. Además, podemos elegir la justificación del texto de las columnas, insertando símbolos de dos puntos (`:`). 
 
 Veamos un ejemplo, que es lo más ilustrativo. El código siguiente:
 
@@ -149,6 +153,8 @@ Veamos un ejemplo, que es lo más ilustrativo. El código siguiente:
     | Juan Froilán | De Todos los Santos  | 17 | (310) 555 2323 |
     | John   | Connor  | 42 | 02.112233 |
 
+
+\newpage
 
 Se visualiza:
 
@@ -225,6 +231,8 @@ Para practicar con Markdown tenemos el wiki en Github[^wikigithub] y un blog en 
 - Cuando hayas terminado, asegúrate de que todo está a tu gusto, publica tu entrada y avísame enviándome un mensaje de correo-e.
 
 
+
+
 [^wikigithub]: https://github.com/vitojph/2015lmweb/wiki
 
 [^github]: https://github.com/
@@ -240,3 +248,10 @@ Para practicar con Markdown tenemos el wiki en Github[^wikigithub] y un blog en 
 [^lmblog]: https://2015lmweb.wordpress.com
 
 [^sabores]: https://2015lmweb.wordpress.com/2015/03/04/markdown-de-sabores
+
+[^fuente]: https://raw.githubusercontent.com/vitojph/2015lmweb/master/LenguajesMarcasLigeros-Markdown.Rmd
+
+[^video1]: https://vimeo.com/121830786
+
+[^video2]: https://vimeo.com/121832186
+

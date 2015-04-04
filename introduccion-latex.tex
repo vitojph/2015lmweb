@@ -1,0 +1,308 @@
+% fecha: 01/04/2015
+% autor: Víctor Peinado @vitojph
+
+% declaramos el tipo de documento
+\documentclass[a4paper]{article}
+
+% en la cabecera, añadimos los paquetes extra
+
+% imprescindibles
+\usepackage[spanish]{babel} % definimos el español como lengua base
+\usepackage[utf8]{inputenc} % definimos UTF8 como codificación
+
+% opcionales
+\usepackage{multirow} % fusión filas en tablas 
+\usepackage{hyperref} % introduce enlaces a partir de URLs
+
+\usepackage{tipa} % paquetes para símbolos del IPA
+\usepackage{tipx}
+
+\usepackage{qtree} % árboles sintácticos
+\usepackage{tikz-dependency} % árboles de dependencias
+
+\usepackage{gb4e} % glosas
+
+
+% definimos el título, la fecha, etc
+\title{Introducción a \LaTeX}
+\author{Víctor Peinado}
+\date{1 de abril de 2015}
+
+
+% aquí termina la cabecera y comienza el cuerpo del documento
+\begin{document}
+
+% pintamos el título
+\maketitle
+
+% comienza el contenido de nuestro documento 
+\section{Introducción}
+\label{sec:intro}
+
+En este documento, presentamos los comandos básicos para crear documentos en \LaTeX: introducir (Sección \ref{parrafos})  y formatear texto (Sección \ref{estilos}), organizar la información en listas (Sección \ref{listas}) y tablas (Sección \ref{tablas}), etc. 
+
+En la última parte, mostraremos algunos ejemplos de paquetes de \LaTeX\ útiles para lingüistas (Sección \ref{ling}).
+
+Lo interesante es leer el código y compararlo con la salida en PDF. Así que , para que esto realmente sea útil, usa ambos ficheros a la vez.
+
+
+\section{Párrafos}
+\label{parrafos}
+
+Para organizar el texto en párrafos no es necesario que los marquemos de manera explícita: basta con que los separemos con (al menos) dos pulsaciones de intro o retornos de carro.
+
+Aquí comienza mi segundo párrafo.                           
+Aquí hay otra frase.                      Y aquí termina.
+
+% fíjate en que es indiferente el número de espacios que introduzcas
+
+
+
+Habrás notado que los párrafos se sangran automáticamente. Pero este comportamiento se puede modificar, con la instrucción \texttt{\textbackslash noindent}, como hago a continuación.
+
+\noindent Este párrafo contiene unas cuantas palabras.
+
+
+\noindent Este párrafo contiene unas cuantas palabras. Este párrafo contiene unas cuantas palabras. Este párrafo contiene unas cuantas palabras. Este párrafo contiene unas cuantas palabras.
+
+
+\section{Estilos de letra y tamaños}
+\label{estilos}
+
+Para cambiar el estilo del texto, podemos utilizar distintos comandos:
+
+\begin{itemize}
+\item el comando \texttt{\textbackslash textit} para el \textit{texto en cursiva}.
+
+\item el comando \texttt{\textbackslash textbf} para el \textbf{texto en negrita}.
+
+\item el comando \texttt{\textbackslash textsc} para el \textsc{Texto En Versalita}.
+
+\item el comando \texttt{\textbackslash texttt} para el \texttt{texto en fuente de ancho fijo}.
+
+\end{itemize}
+
+
+Con respecto al tamaño de letra, podemos manejar varios: desde el \tiny{diminuto}, \scriptsize{tamaño script}, \footnotesize{tamaño de pie de página}, \small{pequeño}, tamaño normal, \large{grande}, \Large{más grande}, \LARGE{todavía más grande}, \huge{enorme}, \Huge{gigantesco}.
+
+\normalsize{Volvemos al texto normal.}
+
+
+
+\section{Alineación del texto}
+\label{alineacion}
+
+Para justificar el texto, podemos definir entornos de distinto tipo con los comandos \texttt{\textbackslash begin} y \texttt{\textbackslash end}, a saber:
+
+\begin{center}
+Este párrafo está centrado con el entorno \texttt{center}. Bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla.
+\end{center}
+
+
+\begin{flushright}
+Este párrafo está justificado a la derecha con el entorno \texttt{flushright}. Bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla.
+\end{flushright}
+
+
+\begin{flushleft}
+Este párrafo está alineado a la izquierda y justificado por ambos lados (por defecto es así) con el entorno \texttt{flushleft}. Bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla.
+\end{flushleft}
+
+
+\section{Listas}
+\label{listas}
+
+En las sección\ref{estilos} hemos visto un par de ejemplos de listas. Entremos en detalle.
+
+Para definir listas, podemos utilizar los comandos \texttt{\textbackslash begin} y \texttt{\textbackslash end} con las opciones siguientes:
+
+\texttt{itemize} crea listas no numeradas:
+
+\begin{itemize}
+\item Primer elemento.
+\item Segundo elemento.
+\item Tercer elemento.
+\end{itemize}
+
+\texttt{enumerate} crea listas numeradas:
+
+\begin{enumerate}
+\item Primer elemento.
+\item Segundo elemento.
+\item Tercer elemento.
+\end{enumerate}
+
+
+\texttt{description} crea listas de definición:
+
+\begin{enumerate}
+\item[Primer elemento] es el que va antes del resto.
+\item[Segundo elemento] no comienza ni termina la serie.
+\item[Tercer elemento] es el último.
+\end{enumerate}
+
+
+
+Y recuerda que las listas se pueden anidar de distintas maneras:
+
+\begin{enumerate}
+
+\item tomates
+  \begin{enumerate}
+  	\item cherry
+  	\begin{enumerate}
+  		\item maduritos
+  	\end{enumerate}
+  	\item pera 
+  	\item en rama
+  \end{enumerate}
+
+\item lechugas
+
+\item patatas
+
+\item pimientos
+
+\end{enumerate}
+
+
+
+\section{Tablas}
+\label{tablas}
+
+Un ejemplo de tabla sencilla, en la que no fusiono celdas pero sí aplico distintos estilos y alineación al texto de las celdas.
+
+\vspace{0.5cm} % introduce un espacio vertical extra de 0,5 cm
+
+\begin{tabular}{|| l | c | l | l | l ||}
+    \hline
+    \hline
+   uno & dos & \textbf{tres} & xx & qq \\
+    \hline
+   cuatro & cinco \textit{cinq five cinque} & seis  & xx & qq \\
+    \hline
+   siete & ocho & nueve & xx & qq \\ 
+    \hline
+   \texttt{diez} & once & doce  & xx & qq \\
+    \hline
+    \hline
+ \end{tabular}
+ 
+\vspace{0.5cm} % introduce un espacio vertical extra de 0,5 cm
+
+Otro ejemplo de tabla. En este caso sí fusiono columnas (en horizontal) y filas (en vertical). Para poder hacer esto último, recuerda que necesitarás cargar el paquete \texttt{multirow}.
+
+
+\vspace{0.5cm} % introduce un espacio vertical extra de 0,5 cm
+
+
+\begin{tabular}{| c | c | c |}
+    \hline
+    1 & 2 & 3 \\
+    \hline
+    
+    \multirow{2}{*}{10} & 20 & 30 \\
+    \cline{2-3} % pinta una línea horizontal de la col 2 a la 3
+    
+    & \multicolumn{2}{r|}{la suma total de los números anteriores es}\\
+
+    \hline
+    
+    Una palabra & \multicolumn{2}{c|}{la suma total de los números anteriores es}\\
+
+    \hline
+
+    11 & 21 & 31\\
+    \hline
+
+\end{tabular}
+
+\vspace{0.5cm} % introduce un espacio vertical extra de 0,5 cm
+
+Sobre tablas hay muchísima información en la web, curiosea.\footnote{Revisa 
+\url{http://es.wikibooks.org/wiki/Manual_de_LaTeX/Escribiendo_texto/Tablas} si quieres aprender más.}
+
+\section{Paquetes de lingüística}
+\label{ling}
+
+
+\subsection{Símbolos del IPA}
+\label{ipa}
+
+\begin{center}
+\textipa{abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 @ \;A \;B \;E \;G \;H \;I \;L \;R \;Y \:d \:l \:n \:r \:s \:t \:z \!b \!d \!g \!j \!G \!o}
+\end{center}
+
+
+Quizá el paquete de \LaTeX\ de língüística más interesante es \texttt{tipa}, que nos permite introducir símbolos del \textit{International Phonetic Alphabet} (IPA) en nuestor documento. Veameos algunos ejemplos.
+
+Una vez importados los paquetes \texttt{tipa} y \texttt{tipx} con la instrucción \texttt{usepackage} podremos introducir símbolos fonéticos de varias maneras: 
+
+De uno en uno: en español \textipa{[b]} no es lo mismo que \textipa{[B]}, de hecho son alófonos en distribución complementaria.
+
+
+Transcripciones fonéticas más largas:
+
+\begin{IPA}
+\noindent [pero si me "d\~an a elexír, \~e\c{n}tre tóDas las BíDas, \textdyoghlig o eskóxo la Del piráta kóxo k\~om páta De pálo, k\~om pár\textteshlig e \~en el óxo, k\~oN kára De málo, el Bjéxo tru"\~aN kapi"t\~a\c{n} de \textsubarch{\~u}m bárko ke tuBjéra por B\~a\c{n}déra "\~um pár De tíBjas j\textsubarch{ú}na kalaBéra.]
+\end{IPA}
+
+
+\subsection{Árboles sintácticos}
+\label{arboles}
+
+Ejemplos de árboles sintácticos en una lengua inventada.
+
+\vspace{0.5cm}
+
+\qtreecenterfalse
+\hskip 0.1in
+a. \Tree [.O [.SN [.Pron uk ] [.Det naam ] ] [.SV [.SN [.Pron ek ] [.Det kal ] ] [.V remit ] ] ]
+\hskip 0.1in
+b. \Tree [.O [.SN [.Adj saka ] [.N hollum ] [.Det naam ] ] [.SV [.V vomit ] ] ]
+\hskip 0.1in
+c. \Tree [.O [.SN [.N faros ] [.Det dar ] ] [.SV [.SP [.Pre taj ] [.SN [.Adj jelo ] [.N drom ] [.Det kal ] ] ] [.V homit ] ] ]
+
+
+\subsection{Árboles de dependencias}
+\label{deps}
+
+Ejemplo sencillo de árbol de dependencias.
+
+
+\begin{dependency}[theme = simple]
+   \begin{deptext}[column sep=1em]
+      El \& niño \& está \& llorando \& en \& el \& banco \&. \\
+   \end{deptext}
+   \deproot{4}{ROOT}
+   \depedge{2}{1}{det}
+   \depedge{4}{3}{aux}
+   \depedge{4}{2}{nsubj}
+   \depedge{4}{5}{prep}
+   \depedge{7}{6}{det}
+   \depedge{5}{7}{pobj}
+   \depedge{4}{8}{p}
+\end{dependency}
+
+
+\subsection{Glosas}
+\label{glosas}
+
+Un par de ejemplos numerados con glosas, que nos permiten comparar la morfosintaxis de dos lenguas diferentes.
+
+\begin{exe}
+\ex
+\gll Den Fritz_1 habe ich \_\_{}_1 zum Essen eingeladen.\\
+the fred have I {} {to the} eating invited.\\
+\glt I invited Fred for dinner.
+\end{exe}
+
+\begin{exe}\let\eachwordtwo=\sf
+\ex[*]{
+\gll Cette phrase n'a pas une traduction.\\
+This sentence {not has} nought a translation.\\}
+\end{exe}
+
+
+\end{document}
+% fin del documento

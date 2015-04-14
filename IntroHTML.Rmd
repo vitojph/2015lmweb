@@ -9,12 +9,12 @@ output: rmarkdown::tufte_handout
 
 Hay miles de tutoriales, pero dos buenas referencias son:
 
-- Tutorial de HTML en W3Schools.[^w3s]
+- Tutorial de HTML en W3Schools.[^xhtml]
 - Tutorial de HTML en HTML.net.[^html]
 
-Recuerda que hay varias versiones de HTML. Este tutorial trata de cubrir los primeros conceptos de HTML 4.1, con algunas recomendaciones típicas de versiones más modernas como XHTML 1.0[^xhtml1]. 
+Recuerda que hay varias versiones de HTML. Este tutorial trata de cubrir los primeros conceptos de HTML 4.1, con algunas recomendaciones típicas de versiones más modernas como XHTML 1.0. 
 
-Si encuentras tutoriales modernos es posible que hagan referencia a HTML5, la última y más moderna versión de HTML. *Todavía* no nos interesa esta versión.
+Si encuentras tutoriales modernos es posible que hagan referencia a HTML5[^html5], la última y más moderna versión de HTML. *Todavía* no nos interesa esta versión.
 
 
 # Introducción a HTML
@@ -98,7 +98,7 @@ Los documentos web pueden tener una cabecera[^cabecera] `head` de documento en l
 	<head>
 	    <!-- el titulo del documento HTML se muestra en las ventanas 
 	    o pestañas de los navegadores -->
-        <title>Hipertexto y Multimedia: tutorial de HTML</title> 
+        <title>LMTW: tutorial de HTML</title> 
 		<meta name="description" content="tutorial de HTML"/>
         <meta name="keywords" content="HTML, CSS, tutorial, UCM"/>
         <meta name="author" content="Víctor Peinado"/>
@@ -113,7 +113,7 @@ El elemento que engloba el contenido del documento web es el cuerpo del texto `b
     <html>
 
 	<head>
-        <title>Hipertexto y Multimedia: tutorial de HTML</title> 
+        <title>LMTW: tutorial de HTML</title> 
 		<meta name="description" content="tutorial de HTML"/>
 	</head>
 
@@ -312,6 +312,7 @@ También podemos seleccionar el tamaño en píxeles del espacio en blanco que de
      </table>
 ```
 
+Otro ejemplo de tabla, es este caso, fusionando celdas. Fíjate en los atributos `colspan` y `rowspan`.
 
 ```html
     <table border="1" width="90%" cellpadding="5" cellspacing="2">
@@ -340,7 +341,7 @@ Podemos incluir en las celdas de una tabla cualquier contenido, no solo texto. D
         
 # Imágenes
 
-Podemos inclur [imágenes](http://www.w3schools.com/html/html_images.asp) a través del elemento `img`. Dicho elemento es vacío, no etiqueta nada, por lo debemos utilizar una única etiqueta.
+Podemos inclur imágenes[^imagenes] a través del elemento `img`. Dicho elemento es vacío, no etiqueta nada, por lo debemos utilizar una única etiqueta.
 
 La ruta al fichero de la imagen se especifica a través del atributo `src`. Nótese que el valor de este atributo puede ser la ruta al fichero de la imagen o un enlace a una imagen que esté colgada en una web, como hago yo en este ejemplo. 
 
@@ -357,7 +358,7 @@ Por último, con el objetivo de mejorar la accesibilidad de las páginas web, el
 
 # Hiperenlaces `a`
 
-Para etiquetar [enlaces](http://www.w3schools.com/html/html_links.asp) (o vínculos) utilizamos el elemento `a` (*anchor*) junto con:
+Para etiquetar enlaces[^enlaces] (o vínculos) utilizamos el elemento `a` (*anchor*) junto con:
 
 - el atributo `href` para indicar la página web, fichero o recurso destino del enlace.
 - otros atributos como `target` para indicar el modo en el que se abrirá el
@@ -448,45 +449,49 @@ Por ejemplo, enlaces a galerías de imágenes:
 Y lo mismo para música:
 
 ```html
-    <p>Escucha <a href="http://snd.sc/XVjH83">mi canción favorita</a> 
+    <p>Escucha <a href="http://open.spotify.com/track/0MnIQOqJq0hFdq5t7d3zs9">mi canción favorita</a> 
     de esta semana.</p>
 
     <p>O disfrútala directamente desde aquí: </p>
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" 
-    src="https://w.soundcloud.com/player/?url=
-    http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F76331890">
-    </iframe>
-```
 
-¡OJO! [`iframe`](http://www.w3schools.com/html/html_iframe.asp) es un elemento especial que nos permite incrustar un documento HTML completo dentro de otro documento HTML.
+    <iframe src="https://embed.spotify.com/?uri=spotify:track:0MnIQOqJq0hFdq5t7d3zs9" 
+    width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+```
+\marginnote{¡OJO! \texttt{iframe} es un elemento especial que nos permite incrustar un documento HTML completo dentro de otro documento HTML.}
+
+
 
 ## Enlazando vídeo
 
 O vídeo:
 
 ```html
-    <p>Haz clic en <a href="http://www.youtube.com/watch?v=Y7DQRxV3mV8">
-    mi vídeo favorito</a>.</p>
+    <p>Haz clic en <a href="https://youtu.be/4Ca6x4QbpoM">
+    este vídeo</a>.</p>
 	
     <p>O visualízalo directamente aquí:</p>
     
     <iframe width="560" height="315" 
-    src="http://www.youtube.com/embed/Y7DQRxV3mV8" frameborder="0" 
-    allowfullscreen></iframe>
+    src="https://www.youtube.com/embed/4Ca6x4QbpoM" 
+    frameborder="0" allowfullscreen></iframe>
 ```
 
 
-- [^w3s]: http://www.w3schools.com/html/default.asp
-- [^html]:  http://es.html.net/tutorials/html/
-- [^xhtml1]: http://www.w3schools.com/html/html_xhtml.asp
-- [html-wiki]: http://es.wikipedia.org/wiki/HTML
-- [^w3c]: http://www.w3c.es
-- [^elementos]: http://www.w3schools.com/html/html_elements.asp
-- [^cabecera]: http://www.w3schools.com/html/html_head.asp
-- [^metadatos]: http://www.w3schools.com/tags/tag_meta.asp
-- [^epigrafes]: http://www.w3schools.com/html/html_headings.asp
-- [^parrafo]: http://www.w3schools.com/html/html_paragraphs.asp
-- [^formato]: http://www.w3schools.com/html/html_formatting.asp
-- [^listas]: http://www.w3schools.com/html/html_lists.asp
-- [^atributos]: http://www.w3schools.com/html/html_attributes.asp
-- [^tabla]: http://www.w3schools.com/html/html_tables.asp
+[^xhtml]: http://www.w3schools.com/html/html_xhtml.asp
+[^html]:  http://es.html.net/tutorials/html/
+[^html5]: http://www.w3schools.com/html/default.asp
+[^html-wiki]: http://es.wikipedia.org/wiki/HTML
+[^w3c]: http://www.w3c.es
+[^elementos]: http://www.w3schools.com/html/html_elements.asp
+[^cabecera]: http://www.w3schools.com/html/html_head.asp
+[^metadatos]: http://www.w3schools.com/tags/tag_meta.asp
+[^epigrafes]: http://www.w3schools.com/html/html_headings.asp
+[^parrafo]: http://www.w3schools.com/html/html_paragraphs.asp
+[^formato]: http://www.w3schools.com/html/html_formatting.asp
+[^listas]: http://www.w3schools.com/html/html_lists.asp
+[^atributos]: http://www.w3schools.com/html/html_attributes.asp
+[^tabla]: http://www.w3schools.com/html/html_tables.asp
+[^imagenes]: http://www.w3schools.com/html/html_images.asp
+[^enlaces]: http://www.w3schools.com/html/html_links.asp
+[^iframe]: http://www.w3schools.com/html/html_iframe.asp

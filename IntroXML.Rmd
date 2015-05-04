@@ -74,8 +74,8 @@ Ya sabemos que, formalmente, estos elementos se especifican como los elementos H
 
 En XML estos elementos no tienen ningún significado (aunque lo ideal es darles nombres inteligibles que sean lo suficientemente expresivos para intuir su semántica). Lo que hacemos es simplemente definir la relación de un elemento con respecto a otros: 
 
-    - El elemento `<presentación>` puede aparecer como elemento constitutivo del elemento `<trama>`.
-    - El elemento `<trompfundercillo>` puede aparecer como elemento constitutivo del elemento `<trompfunder>`.
+- El elemento `<presentación>` puede aparecer como elemento constitutivo del elemento `<trama>`.
+- El elemento `<trompfundercillo>` puede aparecer como elemento constitutivo del elemento `<trompfunder>`.
 
 Dentro de una instancia de documento XML, todo elemento tiene que estar explícitamente marcado, con etiquetas de inicio y fin.
 
@@ -514,4 +514,4 @@ Lo más habitual será situar la DTD en un fichero aparte y enlazar dicho ficher
 [^sgml]: http://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language
 [^xhtml]: http://en.wikipedia.org/wiki/XHTML
 [^dtd]: http://en.wikipedia.org/wiki/Document_Type_Definition
-[^xmlschema): http://en.wikipedia.org/wiki/XML_Schema_(W3C)
+[^xmlschema]: http://en.wikipedia.org/wiki/XML_Schema_(W3C)

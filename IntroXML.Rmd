@@ -227,14 +227,15 @@ Cuando no hay cuantificador, la aparición del elemento es obligatoria y lo hace
 
 Cuando el modelo de contenido define más de un componente podemos utilizar distintos contectores para especificar el orden de aparición.
 
+- La coma `,` permite representar secuencias, en las que el orden está definido.
+
+- La barra vertical `|` indica disyunción: o bien un componente o bien otro, pero no los dos.
+
 ```xml
 <!ELEMENT agenda_de_contactos (contacto+) >
-<!ELEMENT contacto            (nombre, apellidos, email*, telefono*) >
+<!ELEMENT contacto            (nombre|apellidos|email*|telefono*) >
 <!ELEMENT apellidos           (apellido1, apellido2?) >
 ```
-
-- La coma `,` permite representar secuencias, en las que el orden está definido.
-- La barra vertical `|` indica disyunción: o bien un componente o bien otro, pero no los dos.
 
 Podemos agrupar los elementos usando cuantificadores y conectores de maneras más sofisticadas.
 
@@ -243,7 +244,7 @@ Podemos agrupar los elementos usando cuantificadores y conectores de maneras má
 el elemento apellidos puede contener un único apellido1 
 o bien una secuencia de apellido1 y apellido2
 -->
-<!ELEMENT apellidos ( apellido1 | (apellido1, apellido2) >
+<!ELEMENT apellidos ( apellido1 | (apellido1, apellido2) ) >
 
 <!--
 un poema está formado por un título opcional seguido de:

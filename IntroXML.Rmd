@@ -239,9 +239,24 @@ Cuando el modelo de contenido define más de un componente podemos utilizar dist
 Podemos agrupar los elementos usando cuantificadores y conectores de maneras más sofisticadas.
 
 ```xml
+<!--
+el elemento apellidos puede contener un único apellido1 
+o bien una secuencia de apellido1 y apellido2
+-->
 <!ELEMENT apellidos ( apellido1 | (apellido1, apellido2) >
 
+<!--
+un poema está formado por un título opcional seguido de:
+- una secuencia de estrofas, o bien,
+- una secuencia de pareados; o bien,
+- una secuencia de líneas,
+-->
 <!ELEMENT poem (title?, (stanza+ | couplet+ | line+) ) >
+
+<!--
+un poema está formado por un título opcional seguido de una 
+mezcla indeterminada de estrofas, pareados y líneas
+-->
 <!ELEMENT poem (title?, (stanza | couplet | line)+ ) >
 ```
 

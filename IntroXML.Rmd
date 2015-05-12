@@ -5,6 +5,7 @@ date: "5 de mayo de 2015"
 output: rmarkdown::tufte_handout
 ---
 
+
 # Referencias
 
 Hay numerosas referencias válidas en internet para aprender XML y tecnologías asociadas. En esta presentación, vamos a basarnos en las tres siguientes:
@@ -18,7 +19,7 @@ Hay numerosas referencias válidas en internet para aprender XML y tecnologías 
 
 XML[^xml] (*eXtensible Mark-up Language*) es un lenguaje de marcas orientado a transmitir y almacenar información de manera estructurada. Se ha convertido en uno de los principales formatos de intercambio de información utilizado en Internet y en bases de datos.
 
-Fue diseñado por el W3C[^w3c] como un subconjunto más restrictivo a partir de otro lenguaje de marcas anterior llamado [SGML](http://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language).
+Fue diseñado por el W3C[^w3c] como un subconjunto más restrictivo a partir de otro lenguaje de marcas anterior llamado SGML[^sgml].
 
 En términos generales, podemos considerar XML como un *metalenguaje*, es decir, un lenguaje (de marcas) que nos va a permitir definir otros lenguajes (de marcas).
 
@@ -203,7 +204,7 @@ La más común es `#PCDATA` (*parsed character data*) que se utiliza para indica
 <!ELEMENT telefono            (#PCDATA) >
 ```
 
-Para más detalles sobre estas palabras reservadas, consulta [el tutorial de DTD en W3Schools](http://www.w3schools.com/dtd/dtd_building.asp).
+Para más detalles sobre estas palabras reservadas, consulta el tutorial de DTD en W3Schools[^tuto-dtd].
 
 
 ## Cuantificadores
@@ -211,7 +212,7 @@ Para más detalles sobre estas palabras reservadas, consulta [el tutorial de DTD
 Existen tres cuantificadores, que permiten indicar dentro del modelo de contenido, el número de veces que puede aparecer un elemento: 
 
 - El símbolo de la suma `+` indica que el elemento puede aparecer *1 o más veces*. 
-- La interrogación `?` indica que el elemento es opcional, pero si aparece solo lo hace una vez: *0 o 1 vez*.
+- La interrogación `?` indica que el elemento es opcional, pero si aparece solo lo hace una vez: *0 ó 1 vez*.
 - El asterisco `*` indica que el elemento es opcional y, si aparece, puede hacerlo más de una vez: *0, 1 o más veces*.
 
 Cuando no hay cuantificador, la aparición del elemento es obligatoria y lo hace una sola vez.
@@ -389,7 +390,7 @@ El segundo elemento de la definición de un atributo es el tipo de valor que ace
 ```
 
 
-- El primer caso consiste en usar un [número especial de palabras clave]() que declaran el tipo de valor que el atrobuto puede tomar.
+- El primer caso consiste en usar un número especial de palabras clave que declaran el tipo de valor que el atrobuto puede tomar.
     - `CDATA` para cualquier secuencia de caracteres alfanuméricos, incluídos etiquetas de elementos.
     - `ID`: identificadores únicos.
     - Otras palabras clave como `NMTOKEN, NMTOKENS, IDEREF, IDREFS, ENTITY, ENTITIES`.
@@ -469,10 +470,11 @@ Entre las ventajas de poder usar este tipo de entidades están:
 - Ahorra tecleo en aquellas porciones de texto que se repiten a menudo.
 - Ayuda a facilidar el mantenimiento y la consistencia de ficheros grandes.
 
-Recuerda que [en HTML están definidas algunas entidades](http://ascii.cl/es/codigos-html.htm) que hemos visto y usado:
+Por ejemplo, en HTML ya están definidas algunas entidades[^entidades-html] de uso común:
 
 ```html
-<p>Las vocales con tilde son &aacute;, &eacute;, &iacute;, &oacute; y &uacute;.</p>
+<p>Las vocales con tilde son &aacute;, &eacute;, &iacute;, 
+&oacute; y &uacute;.</p>
 ```    
         
 
@@ -523,6 +525,7 @@ Lo más habitual será situar la DTD en un fichero aparte y enlazar dicho ficher
 [^gentle]: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html
 [^w3s]: http://www.w3schools.com/xml/
 [^dtd]: http://www.w3schools.com/dtd/default.asp
+[^tuto-dtd]: http://www.w3schools.com/dtd/dtd_building.asp
 [^diff]: Diferencias entre HTML y XHTML http://en.wikipedia.org/wiki/XHTML#Relationship_to_HTML
 [^elem-attrib]: Elements vs. Attributes http://www.w3schools.com/dtd/dtd_el_vs_attr.asp
 [^xml]: http://en.wikipedia.org/wiki/XML
@@ -531,3 +534,5 @@ Lo más habitual será situar la DTD en un fichero aparte y enlazar dicho ficher
 [^xhtml]: http://en.wikipedia.org/wiki/XHTML
 [^dtd]: http://en.wikipedia.org/wiki/Document_Type_Definition
 [^xmlschema]: http://en.wikipedia.org/wiki/XML_Schema_(W3C)
+[^sgml]: http://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language
+[^entidades-html]: http://ascii.cl/es/codigos-html.htm
